@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
+import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
 import java.util.ArrayList;
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab7)};
 
         mFragments.add(new FactoryMethodModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
+        mFragments.add(new SingletonModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());

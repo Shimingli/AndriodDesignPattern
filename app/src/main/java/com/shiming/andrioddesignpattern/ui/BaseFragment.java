@@ -35,7 +35,7 @@ public abstract class BaseFragment extends Fragment {
             RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
             containerLayout.addView(contentView, lp);
         }
-
+        showTitleBar(false);
         return rootView;
     }
 

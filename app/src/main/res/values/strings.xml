@@ -2,7 +2,7 @@
     <string name="app_name">AndriodDesignPattern</string>
 
     <string name="all_order_tab1">工厂方法模式</string>
-    <string name="all_order_tab2">待接单</string>
+    <string name="all_order_tab2">单利模式</string>
     <string name="all_order_tab3">待执行</string>
     <string name="all_order_tab4">待确认</string>
     <string name="all_order_tab5">已完成</string>
@@ -10,5 +10,7 @@
     <string name="all_order_tab7">过期/取消</string>
     <string name="all_order_tab8">待执行</string>
     <string name="all_order_tab9">待完成</string>
+    <string name="singletondes">代码中一共写了6总方式：饿汉式，懒汉式，双重锁，内部类实现单利，枚举实现单利，</string>
     <string name="factory">在实际开发过程中我们都习惯于直接使用 new 关键字用来创建一个对象，可是有时候对象的创造需要一系列的步骤：你可能需要计算或取得对象的初始设置；选择生成哪个子对象实例；或在生成你需要的对象之前必须先生成一些辅助功能的对象，这个时候就需要了解该对象创建的细节，也就是说使用的地方与该对象的实现耦合在了一起，不利于扩展，为了解决这个问题就需要用到我们的工厂方法模式，它适合那些创建复杂的对象的场景，工厂方法模式也是一个使用频率很高的设计模式。</string>
+    <string name="singleton">一、作用 单例模式（Singleton）：保证一个类仅有一个实例，并提供一个访问它的全局访问点 二、适用场景 1. 应用中某个实例对象需要频繁的被访问。 2. 应用中每次启动只会存在一个实例。如账号系统，数据库系统。</string>
 </resources>
