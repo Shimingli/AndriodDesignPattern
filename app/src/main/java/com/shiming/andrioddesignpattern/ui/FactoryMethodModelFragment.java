@@ -19,6 +19,9 @@ import com.shiming.andrioddesignpattern.factory_model.ToyFactory;
  　但是同时工厂方法模式也有一些缺点，每次我们为工厂方法添加新的产品时就要编写一个新的产品类
  ，同时还要引入抽象层，当产品种类非常多时，会出现大量的与之对应的工厂对象，
  这必然会导致类结构的复杂化，所以对于简单的情况下，使用工厂方法模式就需要考虑是不是有些“重”了。
+
+ 好处：假如在项目中某个对象被new了100次，以后业务逻辑发生改变了，构造方法多了一个参数，你不会把所有的new的代码
+ 去边删掉了把，用过用过程模式的话，你只需要换一个工程就好了
  */
 
 public class FactoryMethodModelFragment extends BaseFragment {

@@ -12,6 +12,12 @@ import com.shiming.andrioddesignpattern.singleton_model.SingletonSix;
 
 /**
  * Created by shiming on 2017/9/10.
+ * 好处是：提供了对外唯一的受控访问
+ * 由于系统中只存在一个对象，因此可以节约系统资源，对于频繁需要创建和销毁的对象无意是提高了系统的性能
+ * 坏处：单利模式没有抽象层，因此单利类的扩展很麻烦
+ * 单利类职责过重，在一定程度上违背了单一职责的原则
+ * 滥用单利带来一些负面问题，如果实例化对象长时间不被利用，系统会认为是垃圾而被回收，这将导致对象状态的丢失
+ *
  */
 
 public class SingletonModelFragment extends BaseFragment{

@@ -8,6 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.flyco.tablayout.SlidingTabLayout;
+import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
 import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
 import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mTitles = new String[]{
                 this.getResources().getString(R.string.all_order_tab1),
                 this.getResources().getString(R.string.all_order_tab2),
-                this.getResources().getString(R.string.all_order_tab9),
+                this.getResources().getString(R.string.all_order_tab3),
                 this.getResources().getString(R.string.all_order_tab4),
                 this.getResources().getString(R.string.all_order_tab5),
                 this.getResources().getString(R.string.all_order_tab6),
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new SingletonModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
+        mFragments.add(new BuilderModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
