@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndriodDesignPattern</string>
+
+    <string name="all_order_tab1">工厂方法模式</string>
+    <string name="all_order_tab2">待接单</string>
+    <string name="all_order_tab3">待执行</string>
+    <string name="all_order_tab4">待确认</string>
+    <string name="all_order_tab5">已完成</string>
+    <string name="all_order_tab6">问题单</string>
+    <string name="all_order_tab7">过期/取消</string>
+    <string name="all_order_tab8">待执行</string>
+    <string name="all_order_tab9">待完成</string>
+    <string name="factory">在实际开发过程中我们都习惯于直接使用 new 关键字用来创建一个对象，可是有时候对象的创造需要一系列的步骤：你可能需要计算或取得对象的初始设置；选择生成哪个子对象实例；或在生成你需要的对象之前必须先生成一些辅助功能的对象，这个时候就需要了解该对象创建的细节，也就是说使用的地方与该对象的实现耦合在了一起，不利于扩展，为了解决这个问题就需要用到我们的工厂方法模式，它适合那些创建复杂的对象的场景，工厂方法模式也是一个使用频率很高的设计模式。</string>
+</resources>

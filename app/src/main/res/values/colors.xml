@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="zhenai_tab_container_title">#8b5df5</color>
+    <color name="zhenai_library_container_bg">#00f7f8fb</color>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/lib_titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/zhenai_tab_container_title"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/zhenai_lib_titlebar_right_red_dot"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="2dp"
+                    android:src="@android:drawable/ic_notification_overlay"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        <View
+            android:id="@+id/titlebar_underline"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/title_bar_shadow_shape"/>
+    </RelativeLayout>
+</merge>
