@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
 import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
+import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
 import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new SingletonModelFragment());
         mFragments.add(new BuilderModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
+        mFragments.add(new ProtoTypeModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new FactoryMethodModelFragment());
