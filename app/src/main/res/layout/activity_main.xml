@@ -3,26 +3,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
     android:orientation="vertical"
     >
-
-    <com.flyco.tablayout.SlidingTabLayout
-        xmlns:tl="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/tap"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="#FFFFFF"
-        tl:tl_indicator_color="#FF00D2E0"
-        tl:tl_indicator_height="2dp"
-        tl:tl_indicator_width_equal_title="true"
-        tl:tl_tab_padding="10dp"
-        tl:tl_textSelectColor="#FF00D2E0"
-        tl:tl_textsize="16sp"
-        tl:tl_textUnselectColor="#FF3C3B3B"
-        tl:tl_underline_color="#FFFFFF"
-        tl:tl_underline_height="1dp"/>
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/btn_creator_model"
+        android:text="@string/creatormodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_structural_model"
+        android:text="@string/structuralmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

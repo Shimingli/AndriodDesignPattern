@@ -1,19 +1,9 @@
 package com.shiming.andrioddesignpattern;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-
-import com.flyco.tablayout.SlidingTabLayout;
-import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
-import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
-import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
-import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
-
-import java.util.ArrayList;
+import android.view.View;
 
 /**
 创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
@@ -22,58 +12,25 @@ import java.util.ArrayList;
  命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。
  */
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Fragment> mFragments = new ArrayList<>();
-    private String[] mTitles;
-    private MyPagerAdapter mAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ViewPager pager= (ViewPager) findViewById(R.id.viewpager);
-        SlidingTabLayout tab= (SlidingTabLayout) findViewById(R.id.tap);
-        mTitles = new String[]{
-                this.getResources().getString(R.string.all_order_tab1),
-                this.getResources().getString(R.string.all_order_tab2),
-                this.getResources().getString(R.string.all_order_tab3),
-                this.getResources().getString(R.string.all_order_tab4),
-                this.getResources().getString(R.string.all_order_tab5),
-                this.getResources().getString(R.string.all_order_tab6),
-                this.getResources().getString(R.string.all_order_tab7)};
-
-        mFragments.add(new FactoryMethodModelFragment());
-        mFragments.add(new SingletonModelFragment());
-        mFragments.add(new BuilderModelFragment());
-        mFragments.add(new ProtoTypeModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
-        mFragments.add(new FactoryMethodModelFragment());
-
-
-        mAdapter = new MyPagerAdapter(getSupportFragmentManager());
-        pager.setAdapter(mAdapter);
-        tab.setViewPager(pager);
+        findViewById(R.id.btn_creator_model).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,CreatorModelActivity.class));
+            }
+        });
+        findViewById(R.id.btn_structural_model).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,StructuralModelActivity.class));
+            }
+        });
     }
-    private class MyPagerAdapter extends FragmentPagerAdapter {
-        public MyPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
 
-        @Override
-        public int getCount() {
-            return mFragments.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mTitles[position];
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return mFragments.get(position);
-        }
-    }
 
 }
