@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
 import com.flyco.tablayout.SlidingTabLayout;
+import com.shiming.andrioddesignpattern.ui.AdapterModelFragment;
 import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
-import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
 import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
 import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 /**
  * @author shiming
  * @version v1.0 create at 2017/9/14
- * @des
+ * @des 结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
  */
 public class StructuralModelActivity extends FragmentActivity {
     private ArrayList<Fragment> mFragments = new ArrayList<>();
@@ -32,13 +32,13 @@ public class StructuralModelActivity extends FragmentActivity {
         ViewPager pager= (ViewPager) findViewById(R.id.viewpager);
         SlidingTabLayout tab= (SlidingTabLayout) findViewById(R.id.tap);
         mTitles = new String[]{
-                this.getResources().getString(R.string.all_order_tab1),
+                this.getResources().getString(R.string.all_order_tab5),
                 this.getResources().getString(R.string.all_order_tab2),
                 this.getResources().getString(R.string.all_order_tab3),
                 this.getResources().getString(R.string.all_order_tab4),
         };
 
-        mFragments.add(new FactoryMethodModelFragment());
+        mFragments.add(new AdapterModelFragment());
         mFragments.add(new SingletonModelFragment());
         mFragments.add(new BuilderModelFragment());
         mFragments.add(new ProtoTypeModelFragment());

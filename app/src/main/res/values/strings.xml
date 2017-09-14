@@ -5,7 +5,7 @@
     <string name="all_order_tab2">单利模式</string>
     <string name="all_order_tab3">建造者模式</string>
     <string name="all_order_tab4">原型模式</string>
-    <string name="all_order_tab5">已完成</string>
+    <string name="all_order_tab5">适配器模式</string>
     <string name="all_order_tab6">问题单</string>
     <string name="all_order_tab7">过期/取消</string>
     <string name="all_order_tab8">待执行</string>
@@ -17,4 +17,5 @@
     <string name="prototype">原型模式：使用的场景，当对象构造的方法非常的复杂，在生成对象非常好性能，我们就需要原型模式，通过复制克隆一个指定对象来创建更多同类型的对象</string>
     <string name="creatormodel">创建者模式</string>
     <string name="structuralmodel">结构型模式</string>
+    <string name="adaptermodel">适配器模式：手机电源的适配器，笔记本电脑的充电器，你如果要给笔记本充电，你肯定不会带个充电宝吧，特别好理解,将一个类的接口转换成客服希望的另外的一个接口，adapter模式使得原来由于接口不兼容而不能一起工作的那些类可以一起工作</string>
 </resources>
