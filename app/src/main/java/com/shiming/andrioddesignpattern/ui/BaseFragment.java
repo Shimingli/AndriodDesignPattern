@@ -15,7 +15,7 @@ import com.shiming.andrioddesignpattern.R;
 
 
 /**
- * Created by zhenai on 2015/9/29.
+ * Created by shiming on 2015/9/29.
  */
 public abstract class BaseFragment extends Fragment {
     private View titleBarLayout;
