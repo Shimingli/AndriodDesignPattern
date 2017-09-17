@@ -10,9 +10,9 @@ import android.support.v4.view.ViewPager;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.AdapterModelFragment;
-import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
 import com.shiming.andrioddesignpattern.ui.DecoratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
+import com.shiming.andrioddesignpattern.proxy_model.ProxyModelFragment;
 
 import java.util.ArrayList;
 
@@ -34,13 +34,13 @@ public class StructuralModelActivity extends FragmentActivity {
         mTitles = new String[]{
                 this.getResources().getString(R.string.all_order_tab5),
                 this.getResources().getString(R.string.all_order_tab10),
-                this.getResources().getString(R.string.all_order_tab3),
+                this.getResources().getString(R.string.all_order_tab11),
                 this.getResources().getString(R.string.all_order_tab4),
         };
 
         mFragments.add(new AdapterModelFragment());
         mFragments.add(new DecoratorModelFragment());
-        mFragments.add(new BuilderModelFragment());
+        mFragments.add(new ProxyModelFragment());
         mFragments.add(new ProtoTypeModelFragment());
 
 

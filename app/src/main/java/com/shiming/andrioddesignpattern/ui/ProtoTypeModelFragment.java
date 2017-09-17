@@ -14,6 +14,7 @@ import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeExtend;
 
 /**
  * Created by shiming on 2017/9/12.
+ * protoType :原型
  * 原型模式：包括三个角色
  * 1、客户：client 使用原型对象的客户程序
  * 2、抽象原型：ProtoType 规定了具体原型对象必须实现的接口
@@ -27,6 +28,8 @@ import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeExtend;
  * clone的方法完成，他直接在内存中复制数据的，不会调用到类的构造的方法，而且访问的权限对原型模式无效
  * 在单利模式中构造的方法访问权限是private的，但是原型模式直接无视构造方法，所以单利模式和原型模式是
  * 冲突的，使用这个模式的时候，需要特别的注意
+ * Bundle类，该类实现了Cloneable接口  Intent类，该类也实现了Cloneable接口
+ * OkHttpClient这个类中，它实现了Cloneable接口（okhttp）
  *
  */
 
@@ -59,6 +62,6 @@ public class ProtoTypeModelFragment extends BaseFragment {
             stringBuffer1.append(clone1+"我是第"+i+"个克隆出来的"+"\n");
 
         }
-        textView1.setText("第二种的实现的方式"+clone+"\n"+"stringBuffer=="+stringBuffer);
+        textView1.setText("第二种的实现的方式:经过测试无用"+clone+"\n"+"stringBuffer=="+stringBuffer1);
     }
 }

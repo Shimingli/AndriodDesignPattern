@@ -6,7 +6,7 @@ package com.shiming.andrioddesignpattern.prototype_model;
  */
 
 public class ProtoTypeExtend  {
-
+    @Override
     public ProtoTypeExtend clone()  {
         try {
             return (ProtoTypeExtend) super.clone();
@@ -17,6 +17,15 @@ public class ProtoTypeExtend  {
     }
     public String getClone(){
         return "我是本尊";
+    }
+
+    public ProtoTypeExtend cloneDD()  {
+        try {
+            return (ProtoTypeExtend) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
     private void test(){
 
