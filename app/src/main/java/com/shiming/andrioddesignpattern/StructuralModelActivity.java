@@ -11,8 +11,8 @@ import android.support.v4.view.ViewPager;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.AdapterModelFragment;
 import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
+import com.shiming.andrioddesignpattern.ui.DecoratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
-import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
 import java.util.ArrayList;
 
@@ -33,13 +33,13 @@ public class StructuralModelActivity extends FragmentActivity {
         SlidingTabLayout tab= (SlidingTabLayout) findViewById(R.id.tap);
         mTitles = new String[]{
                 this.getResources().getString(R.string.all_order_tab5),
-                this.getResources().getString(R.string.all_order_tab2),
+                this.getResources().getString(R.string.all_order_tab10),
                 this.getResources().getString(R.string.all_order_tab3),
                 this.getResources().getString(R.string.all_order_tab4),
         };
 
         mFragments.add(new AdapterModelFragment());
-        mFragments.add(new SingletonModelFragment());
+        mFragments.add(new DecoratorModelFragment());
         mFragments.add(new BuilderModelFragment());
         mFragments.add(new ProtoTypeModelFragment());
 
