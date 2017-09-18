@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvdes"
+        android:text="@string/proxymodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="这里我实现了三种的代理模式：1、静态代理、2动态代理3、网络代理（aidl）"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:text="点我看第三种的网络代理"
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

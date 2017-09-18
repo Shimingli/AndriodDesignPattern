@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.shiming.andrioddesignpattern.R;
 import com.shiming.andrioddesignpattern.builder_model.Builder;
 import com.shiming.andrioddesignpattern.builder_model.ConcreteBuilder;
-import com.shiming.andrioddesignpattern.builder_model.Diretor;
+import com.shiming.andrioddesignpattern.builder_model.Director;
 import com.shiming.andrioddesignpattern.builder_model.Person;
 
 /**
@@ -41,7 +41,7 @@ public class BuilderModelFragment extends BaseFragment {
         //通过具体创建者，得到创建者
         Builder builder=new ConcreteBuilder();
         //通过创建者，得到导演者
-        Diretor diretor = new Diretor(builder);
+        Director diretor = new Director(builder);
         //做什么，做完了以后，其实里面的builder已经有属性了
         diretor.construct("shiming",true,18,170,80);
         //通过创建者创建实例

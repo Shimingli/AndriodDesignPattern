@@ -16,8 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-   <activity android:name=".CreatorModelActivity"/>
-   <activity android:name=".StructuralModelActivity"/>
+        <activity android:name=".CreatorModelActivity"/>
+        <activity android:name=".StructuralModelActivity"/>
+
+        <service
+            android:name=".proxy_model.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

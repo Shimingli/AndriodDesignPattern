@@ -18,4 +18,16 @@
     <string name="creatormodel">创建者模式</string>
     <string name="structuralmodel">结构型模式</string>
     <string name="adaptermodel">适配器模式：手机电源的适配器，笔记本电脑的充电器，你如果要给笔记本充电，你肯定不会带个充电宝吧，特别好理解,将一个类的接口转换成客服希望的另外的一个接口，adapter模式使得原来由于接口不兼容而不能一起工作的那些类可以一起工作</string>
+    <string name="all_order_tab10">装饰者模式</string>
+    <string name="decorator">装饰者模式：装饰者模式：动态的为一个对象增加新的功能
+ 装饰者模式是一种用于代替继承的技术，无需通过继承增加子类就能扩展对象的
+ 新功能，使用对象的关联关系代替继承关系，更加灵活，同时避免类型体系的快速膨胀
+ 动态的给一个对象添加额外的职责或者行为，就新增功能来说，Decorator 模式相比生成子类更加的灵活</string>
+    <string name="all_order_tab11">代理模式</string>
+    <string name="proxymodel">代理模式为另一个对象提供一个替身或占位符以控制对这个对象的访问。</string>
+    <string name="all_order_tab12">外观模式</string>
+    <string name="facade">外观模式：开发中比如图片的加载框架，封装到最后只暴露
+    一个出来最上级的类共外部使用,使用者根本不用关心这个类具体调用了什么，用的什么逻辑都不用
+        关心。但是不符合开闭原则
+    </string>
 </resources>
