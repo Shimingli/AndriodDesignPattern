@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:text="@string/bridge"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="桥接模式有点难以理解，建议看代码自己写个Demo，然后想象，
+在这里我就自己写了一个如何绘制形状得桥接模式，其实关心的还是需要自己实现要不然理解不动
+"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

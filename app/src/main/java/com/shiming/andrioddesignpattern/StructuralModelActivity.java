@@ -11,6 +11,7 @@ import android.support.v4.view.ViewPager;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.proxy_model.ProxyModelFragment;
 import com.shiming.andrioddesignpattern.ui.AdapterModelFragment;
+import com.shiming.andrioddesignpattern.ui.BridgeModelFragment;
 import com.shiming.andrioddesignpattern.ui.DecoratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.FacadeModelFragment;
 
@@ -36,12 +37,14 @@ public class StructuralModelActivity extends FragmentActivity {
                 this.getResources().getString(R.string.all_order_tab10),
                 this.getResources().getString(R.string.all_order_tab11),
                 this.getResources().getString(R.string.all_order_tab12),
+                this.getResources().getString(R.string.all_order_tab13),
         };
 
         mFragments.add(new AdapterModelFragment());
         mFragments.add(new DecoratorModelFragment());
         mFragments.add(new ProxyModelFragment());
         mFragments.add(new FacadeModelFragment());
+        mFragments.add(new BridgeModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
