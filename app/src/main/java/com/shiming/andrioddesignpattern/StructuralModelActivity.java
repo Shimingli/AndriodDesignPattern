@@ -12,6 +12,7 @@ import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.proxy_model.ProxyModelFragment;
 import com.shiming.andrioddesignpattern.ui.AdapterModelFragment;
 import com.shiming.andrioddesignpattern.ui.BridgeModelFragment;
+import com.shiming.andrioddesignpattern.ui.CompositeModelFragment;
 import com.shiming.andrioddesignpattern.ui.DecoratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.FacadeModelFragment;
 
@@ -38,6 +39,7 @@ public class StructuralModelActivity extends FragmentActivity {
                 this.getResources().getString(R.string.all_order_tab11),
                 this.getResources().getString(R.string.all_order_tab12),
                 this.getResources().getString(R.string.all_order_tab13),
+                this.getResources().getString(R.string.all_order_tab14),
         };
 
         mFragments.add(new AdapterModelFragment());
@@ -45,6 +47,7 @@ public class StructuralModelActivity extends FragmentActivity {
         mFragments.add(new ProxyModelFragment());
         mFragments.add(new FacadeModelFragment());
         mFragments.add(new BridgeModelFragment());
+        mFragments.add(new CompositeModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());

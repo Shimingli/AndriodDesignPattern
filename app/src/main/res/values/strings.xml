@@ -35,4 +35,5 @@
         如何的合理利用面向对象的技术使得改类型能够轻松的沿着多个方向进行变化，而不引入额外的复杂度
         这就是桥接模式出现的原理（Bridge模式）
     </string>
+    <string name="all_order_tab14">组合模式</string>
 </resources>
