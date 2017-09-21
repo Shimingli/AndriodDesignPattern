@@ -15,6 +15,7 @@ import com.shiming.andrioddesignpattern.ui.BridgeModelFragment;
 import com.shiming.andrioddesignpattern.ui.CompositeModelFragment;
 import com.shiming.andrioddesignpattern.ui.DecoratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.FacadeModelFragment;
+import com.shiming.andrioddesignpattern.ui.FlyWeightModelFragment;
 
 import java.util.ArrayList;
 
@@ -40,6 +41,7 @@ public class StructuralModelActivity extends FragmentActivity {
                 this.getResources().getString(R.string.all_order_tab12),
                 this.getResources().getString(R.string.all_order_tab13),
                 this.getResources().getString(R.string.all_order_tab14),
+                this.getResources().getString(R.string.all_order_tab15),
         };
 
         mFragments.add(new AdapterModelFragment());
@@ -48,6 +50,7 @@ public class StructuralModelActivity extends FragmentActivity {
         mFragments.add(new FacadeModelFragment());
         mFragments.add(new BridgeModelFragment());
         mFragments.add(new CompositeModelFragment());
+        mFragments.add(new FlyWeightModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
