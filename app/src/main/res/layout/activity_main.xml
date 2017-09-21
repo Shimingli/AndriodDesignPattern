@@ -18,11 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/btn_behavioral_model"
+        android:text="@string/behavioralmdel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

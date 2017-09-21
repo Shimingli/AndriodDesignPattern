@@ -68,4 +68,6 @@
         全中国的人民那么都去买，是不是服务器必然挂掉，每次查询一个火车票的结果，那么必然会真加大量的创建的对象，销毁，使得
         GC任务繁重，那么这时候就需要使用享元模式了
     </string>
+    <string name="behavioralmdel">行为型模式</string>
+    <string name="all_order_tab16">策略模式</string>
 </resources>
