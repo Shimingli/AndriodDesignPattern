@@ -26,7 +26,12 @@ public class Composite extends Component{
 
     @Override
     public void disPlay(int level) {
-        System.out.print("Leaf disPlay"+level);
+
+        StringBuffer stringBuffer=new StringBuffer();
+        for (int i=0;i<level;i++){
+            stringBuffer.append("-");
+        }
+        System.out.print("Leaf disPlay"+stringBuffer);
         //遍历节点，并且显示
         for (int i=0;i<children.size();i++){
             Component component = children.get(i);
