@@ -4,4 +4,18 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+  <TextView
+      android:text="@string/strtategy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+  <TextView
+      android:id="@+id/tvdes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:id="@+id/btn"
+      android:layout_width="wrap_content"
+      android:text="我是策略模式点我"
+      android:layout_height="wrap_content"/>
 </LinearLayout>

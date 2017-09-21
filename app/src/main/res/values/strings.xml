@@ -70,4 +70,7 @@
     </string>
     <string name="behavioralmdel">行为型模式</string>
     <string name="all_order_tab16">策略模式</string>
+    <string name="strtategy">在安卓中，listview就是实现的策略的模式
+ * listView.setAdapter(ListAdapter) 当实现复杂的条目 设置的是BaseAdapter 或者是ArrayAdapter 是listAdapter
+ * 的子类，通过对比发现listAdapter就是策略strategy接口，arrayadapter就是具体的实现的子类</string>
 </resources>
