@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <TextView
+
+      android:layout_gravity="center"
+      android:text="@string/templatemodel"
+      android:gravity="center"
+      android:id="@+id/tv_show_mes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_click"
+        android:text="点我看模板设计模式实现toast的顺序"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

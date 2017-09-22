@@ -56,16 +56,19 @@ public class StrategyModelFragment extends BaseFragment {
 
         mTextView = (TextView) getView().findViewById(R.id.tvdes);
 
-        mTextView.setText("第一种策略模式实现的价格:\n原价是10 减半后"+i+"\n"+"第二种策略模式实现的价格原价是20 7折后"+i1);
+        final TextView viewById1 = (TextView) getView().findViewById(R.id.tv_text);
+        mTextView.setText("第一种策略模式实现的价格:\n原价是10 减半后"+i+"\n"+"第二种策略模式实现的价格\n原价是20 7折后"+i1);
 
         //时间差值器，也是策略模式
         final Button viewById = (Button) getView().findViewById(R.id.btn);
         viewById.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(viewById, View.ALPHA, 0, 1);
+                ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(viewById1, View.ALPHA, 0, 1);
+                //这里就相当于策略模式实现的
                 objectAnimator.setInterpolator(new AccelerateInterpolator());//加速
                 objectAnimator.setInterpolator(new OvershootInterpolator());//huilai
+                objectAnimator.start();
             }
         });
 

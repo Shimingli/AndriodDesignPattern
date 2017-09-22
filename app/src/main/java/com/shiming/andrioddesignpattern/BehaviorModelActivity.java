@@ -11,8 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
 import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
-import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
+import com.shiming.andrioddesignpattern.ui.TemplateModelFragment;
 
 import java.util.ArrayList;
 
@@ -35,13 +35,13 @@ public class BehaviorModelActivity extends AppCompatActivity {
         SlidingTabLayout tab= (SlidingTabLayout) findViewById(R.id.tap);
         mTitles = new String[]{
                 this.getResources().getString(R.string.all_order_tab16),
-                this.getResources().getString(R.string.all_order_tab2),
+                this.getResources().getString(R.string.all_order_tab17),
                 this.getResources().getString(R.string.all_order_tab3),
                 this.getResources().getString(R.string.all_order_tab4),
         };
 
         mFragments.add(new StrategyModelFragment());
-        mFragments.add(new SingletonModelFragment());
+        mFragments.add(new TemplateModelFragment());
         mFragments.add(new BuilderModelFragment());
         mFragments.add(new ProtoTypeModelFragment());
 

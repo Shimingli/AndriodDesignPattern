@@ -73,4 +73,15 @@
     <string name="strtategy">在安卓中，listview就是实现的策略的模式
  * listView.setAdapter(ListAdapter) 当实现复杂的条目 设置的是BaseAdapter 或者是ArrayAdapter 是listAdapter
  * 的子类，通过对比发现listAdapter就是策略strategy接口，arrayadapter就是具体的实现的子类</string>
+    <string name="all_order_tab17">模板方法模式</string>
+    <string name="templatemodel">
+        模板模式:定义一个算法中的操作框架，而将一些步骤延迟到子类中，使得子类可以不改变算法额结构即可定义该
+ * 算法的某些的特定的步骤.\n
+        使用的场景：
+ \n 1、多个子类有公有的方法，并且逻辑基本相同
+ \n 2、重要复杂的算法，可以把核心算法设计模板方法，周边的相关细节功能则由各个子类实现
+ \n 3、重构时候，模板方法是一个经常使用的方法，把相同的代码抽取到父类中，然后通过构造函数去约束其行为
+    \n 在安卓中 view的Draw方法就空实现，自定义view要是子类需要的话就重写 ondraw方法，erondraw的方法在父类View
+        中已经帮我们调用的顺序做好了，然后我们只需要关心你到底怎么去实现 就是ondraw方法里面
+    </string>
 </resources>
