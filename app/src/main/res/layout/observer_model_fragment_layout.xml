@@ -3,5 +3,15 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
+  <TextView
+      android:text="@string/observer"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content"/>
+  <Button
+      android:layout_gravity="center"
+      android:id="@+id/btn_click"
+      android:layout_width="wrap_content"
+      android:text="点我看那些收到消息了"
+      android:layout_height="wrap_content"/>
 </LinearLayout>

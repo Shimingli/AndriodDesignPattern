@@ -84,4 +84,6 @@
     \n 在安卓中 view的Draw方法就空实现，自定义view要是子类需要的话就重写 ondraw方法，erondraw的方法在父类View
         中已经帮我们调用的顺序做好了，然后我们只需要关心你到底怎么去实现 就是ondraw方法里面
     </string>
+    <string name="all_order_tab18">观察者模式</string>
+    <string name="observer">安卓的源码中很多也使用了观察者模式，比如onclickListener contentObserver Observable  * 组件通信RXjava和 Rxandroid EventBus 最常用的还是Adapter中的notifyDataSetChanged（）方法  * 可以通过BaseAdapter的源码分析。当listview的数据发生了变化时候，我们调用adapter的notifyDataSetChanged（）  * 的方法，这个方法又会调用观察者AdapterDataSetObserver的onchanged的方法，onchanged的方法  * 又会调用requestLayout（）的方法来重新布局，这就是观察者很好的例子</string>
 </resources>
