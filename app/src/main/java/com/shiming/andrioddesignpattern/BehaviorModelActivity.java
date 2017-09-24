@@ -9,8 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.flyco.tablayout.SlidingTabLayout;
+import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.ObserverModelFragment;
-import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
 import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
 import com.shiming.andrioddesignpattern.ui.TemplateModelFragment;
 
@@ -37,13 +37,13 @@ public class BehaviorModelActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab16),
                 this.getResources().getString(R.string.all_order_tab17),
                 this.getResources().getString(R.string.all_order_tab18),
-                this.getResources().getString(R.string.all_order_tab4),
+                this.getResources().getString(R.string.all_order_tab19),
         };
 
         mFragments.add(new StrategyModelFragment());
         mFragments.add(new TemplateModelFragment());
         mFragments.add(new ObserverModelFragment());
-        mFragments.add(new ProtoTypeModelFragment());
+        mFragments.add(new IteratorModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
