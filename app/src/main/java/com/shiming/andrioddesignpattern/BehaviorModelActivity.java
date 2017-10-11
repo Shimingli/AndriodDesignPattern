@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.ChainOfResponsibilityFragment;
+import com.shiming.andrioddesignpattern.ui.CommandPatternModelFragment;
 import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.ObserverModelFragment;
 import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
@@ -40,6 +41,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab18),
                 this.getResources().getString(R.string.all_order_tab19),
                 this.getResources().getString(R.string.all_order_tab20),
+                this.getResources().getString(R.string.all_order_tab21),
         };
 
         mFragments.add(new StrategyModelFragment());
@@ -47,6 +49,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
         mFragments.add(new ObserverModelFragment());
         mFragments.add(new IteratorModelFragment());
         mFragments.add(new ChainOfResponsibilityFragment());
+        mFragments.add(new CommandPatternModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
