@@ -12,6 +12,7 @@ import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.ChainOfResponsibilityFragment;
 import com.shiming.andrioddesignpattern.ui.CommandPatternModelFragment;
 import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
+import com.shiming.andrioddesignpattern.ui.MementoModelFragment;
 import com.shiming.andrioddesignpattern.ui.ObserverModelFragment;
 import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
 import com.shiming.andrioddesignpattern.ui.TemplateModelFragment;
@@ -42,6 +43,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab19),
                 this.getResources().getString(R.string.all_order_tab20),
                 this.getResources().getString(R.string.all_order_tab21),
+                this.getResources().getString(R.string.all_order_tab22),
         };
 
         mFragments.add(new StrategyModelFragment());
@@ -50,6 +52,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
         mFragments.add(new IteratorModelFragment());
         mFragments.add(new ChainOfResponsibilityFragment());
         mFragments.add(new CommandPatternModelFragment());
+        mFragments.add(new MementoModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
