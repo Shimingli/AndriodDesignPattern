@@ -14,6 +14,7 @@ import com.shiming.andrioddesignpattern.ui.CommandPatternModelFragment;
 import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.MementoModelFragment;
 import com.shiming.andrioddesignpattern.ui.ObserverModelFragment;
+import com.shiming.andrioddesignpattern.ui.StateModelFragment;
 import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
 import com.shiming.andrioddesignpattern.ui.TemplateModelFragment;
 
@@ -44,6 +45,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab20),
                 this.getResources().getString(R.string.all_order_tab21),
                 this.getResources().getString(R.string.all_order_tab22),
+                this.getResources().getString(R.string.all_order_tab23),
         };
 
         mFragments.add(new StrategyModelFragment());
@@ -53,6 +55,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
         mFragments.add(new ChainOfResponsibilityFragment());
         mFragments.add(new CommandPatternModelFragment());
         mFragments.add(new MementoModelFragment());
+        mFragments.add(new StateModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
