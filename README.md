@@ -2,3 +2,5 @@
 
 ## 状态模式
 <img src="/imag/statemodel.png" width="5000px" heigh="5000px"/>    
+## 访问者模式
+<img src="/imag/Visitor访问者模式.png" width="5000px" heigh="5000px"/>    
