@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.Visitor_pattern.VisitorPatternModelFragment;
+import com.shiming.andrioddesignpattern.mediator_Pattern.MediatorPatternModelFragment;
 import com.shiming.andrioddesignpattern.ui.ChainOfResponsibilityFragment;
 import com.shiming.andrioddesignpattern.ui.CommandPatternModelFragment;
 import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
@@ -48,6 +49,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
                 this.getResources().getString(R.string.all_order_tab22),
                 this.getResources().getString(R.string.all_order_tab23),
                 this.getResources().getString(R.string.all_order_tab24),
+                this.getResources().getString(R.string.all_order_tab25),
         };
 
         mFragments.add(new StrategyModelFragment());
@@ -59,6 +61,7 @@ public class BehaviorModelActivity extends AppCompatActivity {
         mFragments.add(new MementoModelFragment());
         mFragments.add(new StateModelFragment());
         mFragments.add(new VisitorPatternModelFragment());
+        mFragments.add(new MediatorPatternModelFragment());
 
 
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
