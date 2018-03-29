@@ -1,4 +1,4 @@
-package com.shiming.andrioddesignpattern.ui;
+package com.shiming.andrioddesignpattern.strategy_model;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
@@ -12,9 +12,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.shiming.andrioddesignpattern.R;
+import com.shiming.andrioddesignpattern.strategy_model.CalPriceFactory;
 import com.shiming.andrioddesignpattern.strategy_model.ContextPrice;
 import com.shiming.andrioddesignpattern.strategy_model.FivePriceStrategy;
 import com.shiming.andrioddesignpattern.strategy_model.SevenPriceStrategy;
+import com.shiming.andrioddesignpattern.ui.BaseFragment;
 
 /**
  * @author shiming
@@ -55,7 +57,7 @@ public class StrategyModelFragment extends BaseFragment {
         int i1 = contextPrice.setNewPrice(20);
 
         mTextView = (TextView) getView().findViewById(R.id.tvdes);
-
+        //
         final TextView viewById1 = (TextView) getView().findViewById(R.id.tv_text);
         mTextView.setText("第一种策略模式实现的价格:\n原价是10 减半后"+i+"\n"+"第二种策略模式实现的价格\n原价是20 7折后"+i1);
 
@@ -72,5 +74,17 @@ public class StrategyModelFragment extends BaseFragment {
             }
         });
 
+
+        /*  我觉得策略模式 startegy在这里还要扩展一下下    **/
+//        Player player = new Player();
+//        player.buy(5000D);
+//        CalPriceFactory.getInstance().createCalPrice(player);
+//        System.out.println("玩家需要付钱：" + player.calLastAmount());
+//        player.buy(12000D);
+//        System.out.println("玩家需要付钱：" + player.calLastAmount());
+//        player.buy(12000D);
+//        System.out.println("玩家需要付钱：" + player.calLastAmount());
+//        player.buy(12000D);
+//        System.out.println("玩家需要付钱：" + player.calLastAmount());
     }
 }

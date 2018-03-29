@@ -18,7 +18,7 @@ import com.shiming.andrioddesignpattern.ui.IteratorModelFragment;
 import com.shiming.andrioddesignpattern.ui.MementoModelFragment;
 import com.shiming.andrioddesignpattern.ui.ObserverModelFragment;
 import com.shiming.andrioddesignpattern.ui.StateModelFragment;
-import com.shiming.andrioddesignpattern.ui.StrategyModelFragment;
+import com.shiming.andrioddesignpattern.strategy_model.StrategyModelFragment;
 import com.shiming.andrioddesignpattern.ui.TemplateModelFragment;
 
 import java.util.ArrayList;
