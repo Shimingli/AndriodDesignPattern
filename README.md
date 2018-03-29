@@ -6,3 +6,5 @@
 <img src="/imag/Visitor访问者模式.png" width="5000px" heigh="5000px"/>    
 ## 中介者模式
 <img src="/imag/Mediator中介者模式.png" width="5000px" heigh="5000px"/>    
+## 解释器模式 Expression
+<img src="/imag/Expression解释器模式.png" width="5000px" heigh="5000px"/>    

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	//Copyright 2006 Stéphane GINER
+	//
+	//   Licensed under the Apache License, Version 2.0 (the "License");
+	//   you may not use this file except in compliance with the License.
+	//   You may obtain a copy of the License at
+	//
+	//   http://www.apache.org/licenses/LICENSE-2.0
+	//
+	//   Unless required by applicable law or agreed to in writing, software
+	//   distributed under the License is distributed on an "AS IS" BASIS,
+	//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	//   See the License for the specific language governing permissions and
+	//   limitations under the License.
+-->
+
+<con:configuration xmlns:con="http://expression4j.fr/config">
+	<con:operators>
+		<con:operator name="Plus" symbol="+" unary="false" />
+		<con:operator name="Factor" symbol="*" unary="false" />
+		<con:operator name="Pow" symbol="^" unary="false" />
+		<con:operator name="Divide" symbol="/" unary="false" />
+		<con:operator name="UnaryPlus" symbol="+" unary="true" />
+		<con:operator name="UnaryMinus" symbol="-" unary="true" />
+		<con:operator name="Minus" symbol="-" unary="false" />
+	</con:operators>
+	<con:operator-managers>
+		<con:operator-manager name="default">
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.realcomplex.OperatorPlusRealComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorUnaryPlusComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorUnaryMinusComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorMinusRealReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorUnaryMinusReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorMinusComplexComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorDivideRealReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorPlusRealReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorMultiplyRealReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorMultiplyComplexComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.realcomplex.OperatorMultiplyRealComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.realcomplex.OperatorDivideRealComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorPlusComplexComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorUnaryPlusReal
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.realcomplex.OperatorMinusRealComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.complex.OperatorDivideComplexComplex
+			</con:operator-impl-class>
+			<con:operator-impl-class>
+				fr.expression4j.basic.operatorimpl.real.OperatorPowRealReal
+			</con:operator-impl-class>
+		</con:operator-manager>
+	</con:operator-managers>
+	<con:models>
+		<con:model name="default">
+			<con:unary-operator-class-name>
+				fr.expression4j.basic.impl.OperatorUnaryPlus
+			</con:unary-operator-class-name>
+			<con:unary-operator-class-name>
+				fr.expression4j.basic.impl.OperatorUnaryMinus
+			</con:unary-operator-class-name>
+			<con:binary-operator priority="1">
+				<con:operator-class-name>
+					fr.expression4j.basic.impl.OperatorPlus
+				</con:operator-class-name>
+				<con:operator-class-name>
+					fr.expression4j.basic.impl.OperatorMinus
+				</con:operator-class-name>
+			</con:binary-operator>
+			<con:binary-operator priority="2">
+				<con:operator-class-name>
+					fr.expression4j.basic.impl.OperatorMultiply
+				</con:operator-class-name>
+				<con:operator-class-name>
+					fr.expression4j.basic.impl.OperatorDivide
+				</con:operator-class-name>
+			</con:binary-operator>
+			<con:binary-operator priority="3">
+				<con:operator-class-name>
+					fr.expression4j.basic.impl.OperatorPow
+				</con:operator-class-name>
+			</con:binary-operator>
+			<con:expression-element evaluation-order="1">
+				<con:expression-element-class-name>
+					fr.expression4j.basic.impl.ComplexOrRealExpressionElement
+				</con:expression-element-class-name>
+			</con:expression-element>
+			<con:expression-element evaluation-order="2">
+				<con:expression-element-class-name>
+					fr.expression4j.basic.impl.FunctionExpressionElement
+				</con:expression-element-class-name>
+			</con:expression-element>
+			<con:expression-element evaluation-order="3">
+				<con:expression-element-class-name>
+					fr.expression4j.basic.impl.ConstantOrVariableExpressionElement
+				</con:expression-element-class-name>
+			</con:expression-element>
+			<con:expression-element evaluation-order="4">
+				<con:expression-element-class-name>
+					fr.expression4j.basic.impl.ParenthesisExpressionElement
+				</con:expression-element-class-name>
+			</con:expression-element>
+		</con:model>
+	</con:models>
+	<con:catalogs>
+		<con:catalog name="general">
+			<con:expression>
+				<con:expression-name>log</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.LogFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>acos</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.AcosFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>sin</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.SinFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>tan</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.TanFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>abs</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.AbsFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>cosh</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.CoshFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>floor</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.FloorFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>sqrt</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.SqrtFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>ceil</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.CeilFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>exp</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.ExpFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>atan</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.AtanFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>cos</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.CosFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>asin</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.AsinFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>sinh</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.SinhFunction
+				</con:expression-class>
+			</con:expression>
+			<con:expression>
+				<con:expression-name>random</con:expression-name>
+				<con:expression-value>Predefine</con:expression-value>
+				<con:expression-model>predefine</con:expression-model>
+				<con:expression-class>
+					fr.expression4j.core.predefine.RandomFunction
+				</con:expression-class>
+			</con:expression>
+			<con:constant>
+				<con:constant-name>pi</con:constant-name>
+				<con:constant-property name="realValue"
+					value="3.141592653589793" />
+			</con:constant>
+			<con:constant>
+				<con:constant-name>e</con:constant-name>
+				<con:constant-property name="realValue"
+					value="2.718281828459045" />
+			</con:constant>
+		</con:catalog>
+	</con:catalogs>
+</con:configuration>

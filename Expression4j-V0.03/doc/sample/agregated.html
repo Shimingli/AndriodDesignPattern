@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+  
+
+
+  
+  <title>agregated</title>
+  <style type="text/css"><!--
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="width: 150px; background-color: rgb(51, 51, 255);"><img style="width: 201px; height: 85px;" alt="Expression4j" src="../image/expression4j.PNG" /></td>
+
+
+            <td style="text-align: center; background-color: rgb(51, 51, 255);"><big style="font-style: italic; color: rgb(255, 255, 255);"><big><big><big><big>Expression4J</big></big></big></big></big></td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="vertical-align: top; height: 44px; background-color: rgb(204, 204, 204); width: 150px;"></td>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 44px; font-style: italic;">
+            
+            <h2>Sample &gt; Agregated expression</h2>
+
+
+            </td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 339px;"><a href="../index.html">About</a><br />
+
+
+            <a href="../document.html">Documentation</a><br />
+
+
+Sample<br />
+
+
+&nbsp; &nbsp; <a href="simpleexp.html">Simple
+expression</a><br />
+
+
+&nbsp; &nbsp; Agregated expression<br />
+
+
+&nbsp; &nbsp; <a href="predefined.html">Predefined
+function</a><br />
+
+
+&nbsp; &nbsp; <a href="userdefine.html">User
+define function</a><br />
+&nbsp; &nbsp; <a href="customElement.html">Custom element</a><br />
+
+
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=156661">Download</a></td>
+
+
+            <td style="vertical-align: top; height: 339px;">
+            
+            <h3>Create an agregated expression</h3>
+
+
+An agregated expression is constitued by :<br />
+
+
+            
+            <ul>
+
+
+              <li>&nbsp;function name (like <span style="font-weight: bold;">f</span> or <span style="font-weight: bold;">foo</span> or <span style="font-weight: bold;">function</span>)</li>
+
+
+              <li>parameters (like <span style="font-weight: bold;">x</span> or <span style="font-weight: bold;">y</span> or <span style="font-weight: bold;">foo</span>)</li>
+
+
+              <li>equal sign (=)</li>
+
+
+              <li>the body of the expression who use a previously
+defined expression&nbsp;<span style="font-weight: bold;"></span><span style="font-weight: bold;"></span></li>
+
+
+            
+            </ul>
+
+
+Expression does not support space. If spaces are present in the
+expression, the parsin will generate an error.<br />
+
+
+            <br />
+
+
+            
+            <h3>My first agregated expression with <span style="font-style: italic; color: rgb(51, 51, 255);">expression4j</span></h3>
+
+
+            
+            <pre><span class="gutter"></span><span class="gutter"></span><span class="syntax8">try</span> <span class="syntax18">{</span><br /><span class="gutter"><pre>	Expression expression1 <span class="syntax18">=</span> <br />	ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f(x,y)=2.4e-2*x-3.2*y</span><span class="syntax13">"</span>);<br />	Expression expression2 <span class="syntax18">=</span> <br />	ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">g(x,y)=4*f(x,y)+3</span><span class="syntax13">"</span>);<br /><br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">name:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression2.<span class="syntax6">getName</span>());<br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression2);<br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">parameters:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />	expression2.<span class="syntax6">getParameters</span>());<br /><br />	MathematicalElement me1 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">2</span>);<br />	MathematicalElement me2 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">4</span>);<br />	Parameters parameters <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createParameters</span>();<br />	parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,me1);<br />	parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,me2);<br /><br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression</span><span class="syntax13"> </span><span class="syntax13">g</span><span class="syntax13"> </span><span class="syntax13">for</span><span class="syntax13"> </span><span class="syntax13">x=2</span><span class="syntax13"> </span><span class="syntax13">and</span><span class="syntax13"> </span><span class="syntax13">y</span><span class="syntax13"> </span><span class="syntax13">=</span><span class="syntax13"> </span><span class="syntax13">4:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />	expression2.<span class="syntax6">evaluate</span>(parameters).<span class="syntax6">getRealValue</span>());<br /><br />	me1 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">3</span>);<br />	me2 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">2</span>);<br />	parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,me1);<br />	parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,me2);<br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression</span><span class="syntax13"> </span><span class="syntax13">g</span><span class="syntax13"> </span><span class="syntax13">for</span><span class="syntax13"> </span><span class="syntax13">x=3</span><span class="syntax13"> </span><span class="syntax13">and</span><span class="syntax13"> </span><span class="syntax13">y</span><span class="syntax13"> </span><span class="syntax13">=</span><span class="syntax13"> </span><span class="syntax13">2:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />	expression2.<span class="syntax6">evaluate</span>(parameters).<span class="syntax6">getRealValue</span>());<br /><span class="syntax18">}</span><br /><span class="syntax8">catch</span> (Exception e) <span class="syntax18">{</span><br />	System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br /><span class="syntax18">}<br /><br /><br /></span></pre><span class="syntax18">another sample:</span><br /><br /><pre><span class="syntax8">public</span> <span class="syntax8">static</span> <span class="syntax10">void</span> <span class="syntax6">main</span>(String[] args) <span class="syntax18">{</span><br /><span class="syntax8">	try</span> <span class="syntax18">{</span><br />		Expression expression1 <span class="syntax18">=</span> ExpressionFactory<br />			.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f(x,y)=2.4e-2*x-3.2*y</span><span class="syntax13">"</span>);<br />		Expression expression2 <span class="syntax18">=</span> ExpressionFactory<br />			.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">g(x,y)=4*f(x+3,f(y*2,x/2))+3</span><span class="syntax13">"</span>);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">name:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression2.<span class="syntax6">getName</span>());<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression2);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">parameters:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression2.<span class="syntax6">getParameters</span>());<br /><br />		MathematicalElement me1 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">2</span>);<br />		MathematicalElement me2 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">4</span>);<br />		Parameters parameters <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createParameters</span>();<br />		parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,me1);<br />		parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,me2);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression</span><span class="syntax13"> </span><span class="syntax13">g</span><span class="syntax13"> </span><span class="syntax13">for</span><span class="syntax13"> </span><span class="syntax13">x=2</span><span class="syntax13"> </span><span class="syntax13">and</span><span class="syntax13"> </span><span class="syntax13">y</span><span class="syntax13"> </span><span class="syntax13">=</span><span class="syntax13"> </span><span class="syntax13">4:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression2.<span class="syntax6">evaluate</span>(parameters).<span class="syntax6">getRealValue</span>());<br /><br />		me1 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">3</span>);<br />		me2 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">2</span>);<br />		parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,me1);<br />		parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,me2);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression</span><span class="syntax13"> </span><span class="syntax13">g</span><span class="syntax13"> </span><span class="syntax13">for</span><span class="syntax13"> </span><span class="syntax13">x=3</span><span class="syntax13"> </span><span class="syntax13">and</span><span class="syntax13"> </span><span class="syntax13">y</span><span class="syntax13"> </span><span class="syntax13">=</span><span class="syntax13"> </span><span class="syntax13">2:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression2.<span class="syntax6">evaluate</span>(parameters).<span class="syntax6">getRealValue</span>());<br /><span class="syntax18">	}</span><br /><span class="syntax8">	catch</span> (Exception e) <span class="syntax18">{</span><br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br /><span class="syntax18">	}</span><br /><span class="syntax18">}</span>
+</pre><br /><br /></span></pre>
+
+
+            <span class="gutter">&nbsp;</span> </td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td style="text-align: center;"><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156661&amp;type=4" alt="SourceForge.net Logo" border="0" height="37" width="125" /></a> <a href="http://sourceforge.net/donate/index.php?group_id=156661"><img src="http://images.sourceforge.net/images/project-support.jpg" alt="Support This Project" border="0" height="32" width="88" /> </a> </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<br />
+
+
+</body>
+</html>

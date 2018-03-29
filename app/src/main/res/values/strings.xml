@@ -140,4 +140,5 @@
         状态模式封装的非常好，状态的变更引起了行为的变更，从外部看起来就好像这个对象对应的类发生了改变一样</string>
     <string name="all_order_tab24">访问者模式</string>
     <string name="all_order_tab25">中介者模式</string>
+    <string name="all_order_tab26">解释器模式</string>
 </resources>

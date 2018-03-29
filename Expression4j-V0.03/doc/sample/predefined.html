@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+  
+
+
+  
+  <title>predefine</title>
+  <style type="text/css"><!--
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="width: 150px; background-color: rgb(51, 51, 255);"><img style="width: 201px; height: 85px;" alt="Expression4j" src="../image/expression4j.PNG" /></td>
+
+
+            <td style="text-align: center; background-color: rgb(51, 51, 255);"><big style="font-style: italic; color: rgb(255, 255, 255);"><big><big><big><big>Expression4J</big></big></big></big></big></td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="width: 150px; vertical-align: top; height: 44px; background-color: rgb(204, 204, 204);"></td>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 44px; font-style: italic;">
+            
+            <h2>Sample &gt; Pr&eacute;define function</h2>
+
+
+            </td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 339px;"><a href="index.html">About</a><br />
+
+
+            <a href="document.html">Documentation</a><br />
+
+
+Sample<br />
+
+
+&nbsp; &nbsp; <a href="simpleexp.html">Simple
+expression</a><br />
+
+
+&nbsp; &nbsp; <a href="agregated.html">Agregated
+expression</a><br />
+
+
+&nbsp; &nbsp; Predefined function<br />
+
+
+&nbsp; &nbsp; <a href="userdefine.html">User
+define function</a><br />
+&nbsp; &nbsp; <a href="customElement.html">Custom element</a><br />
+
+
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=156661">Download</a></td>
+
+
+            <td style="vertical-align: top; height: 339px;">
+            
+            <h3>Create an expression using a predefined function</h3>
+
+
+Expression4j predefine a set of function:<br />
+
+
+            
+            <ul>
+
+
+              <li>abs(x)</li>
+
+
+              <li>acos(x)</li>
+
+
+              <li>asin(x)</li>
+
+
+              <li>atan(x)</li>
+
+
+              <li>ceil(x)</li>
+
+
+              <li>cos(x)</li>
+
+
+              <li>cosh(x)</li>
+
+
+              <li>exp(x)</li>
+
+
+              <li>floor(x)</li>
+
+
+              <li>log(x)</li>
+
+
+              <li>random()</li>
+
+
+              <li>sin(x)</li>
+
+
+              <li>sinh(x)</li>
+
+
+              <li>sqrt(x)</li>
+
+
+              <li>tan(x)</li>
+
+
+            
+            </ul>
+
+
+theses function are the same as functions define in Math class.
+            
+            <h3>My first function expression with <span style="font-style: italic; color: rgb(51, 51, 255);">expression4j</span></h3>
+
+
+            <br />
+
+
+            
+            <pre><span class="syntax8">public</span> <span class="syntax8">static</span> <span class="syntax10">void</span> <span class="syntax6">main</span>(String[] args) <span class="syntax18">{</span><br /><span class="syntax8">	try</span> <span class="syntax18">{</span><br />		Expression expression <span class="syntax18">=</span> ExpressionFactory<br />			.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f()=abs(-3)</span><span class="syntax13">"</span>);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">name:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression.<span class="syntax6">getName</span>());<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression.<span class="syntax6">evaluate</span>(<span class="syntax14">null</span>).<span class="syntax6">getRealValue</span>());<br /><span class="syntax18">	}</span><br /><span class="syntax8">	catch</span> (Exception e) <span class="syntax18">{</span><br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br /><span class="syntax18">	}</span><br /><span class="syntax18">}</span>
+            </pre>
+
+
+            </td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td style="text-align: center;"><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156661&amp;type=4" alt="SourceForge.net Logo" border="0" height="37" width="125" /></a> <a href="http://sourceforge.net/donate/index.php?group_id=156661"><img src="http://images.sourceforge.net/images/project-support.jpg" alt="Support This Project" border="0" height="32" width="88" /> </a> </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<br />
+
+
+</body>
+</html>

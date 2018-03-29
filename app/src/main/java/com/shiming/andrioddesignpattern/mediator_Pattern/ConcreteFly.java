@@ -11,12 +11,20 @@ public class ConcreteFly extends Fly {
         super(airName, airId);
     }
 
+    /**
+     * 同事本身的行为，这种行为叫自发行为 ，selfMethod
+     * @param type
+     */
     @Override
     public void doSelMethod(String type) {
         System.out.println("ConcreteFly---doSelfMethod");
         System.out.println("Fly:"+ super.mAirName +"---"+type.toLowerCase());
     }
 
+    /**
+     * 第二种必须依赖中介者才能完成，叫做依赖行为
+     * @param type
+     */
     @Override
     public void doDepMethod(String type) {
         System.out.println("ConcreteFly---doDepMethod");

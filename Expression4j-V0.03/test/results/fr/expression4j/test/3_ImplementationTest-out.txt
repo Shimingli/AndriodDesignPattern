@@ -1,0 +1,246 @@
+1788 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+1788 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1827 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1827 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1853 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1853 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1871 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1871 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1872 [main] WARN fr.expression4j.factory.ExpressionFactory  - Catalog Catalog already exist.
+1872 [main] WARN fr.expression4j.factory.ExpressionFactory  - Catalog Catalog already exist.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1873 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1873 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1878 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 230.0 complex: 240.0
+1878 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 230.0 complex: 240.0
+1880 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 0.0 complex: 0.0
+1880 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 0.0 complex: 0.0

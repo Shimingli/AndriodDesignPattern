@@ -1,0 +1,75 @@
+<!--
+
+//   Copyright 2006 Stéphane GINER
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+
+-->
+
+<!--
+		don't forget to set the test.home environment variable.
+-->
+<project name="Expression4J" default="Expression4JTest" basedir=".">
+
+  <!-- Specify the directory of the installation of CMD -->
+
+	<property name="test.home"		value="${expression4j.test.home}" />
+
+	<!--
+	<taskdef name="junit" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask"/>
+	-->
+  
+	<target name="clean">
+		<delete>
+			<fileset dir="${test.home}">
+				<exclude name="build.xml"/>
+			</fileset>
+		</delete>
+	</target>
+
+	<target name= "Expression4JTest" depends="clean">
+		<junit printsummary="yes" haltonfailure="no" >
+		    <classpath>
+		    	<pathelement location="${test.home}/../lib/expression4j.jar"/>
+		    </classpath>
+			
+			<formatter type="xml" />
+			
+			<test name="fr.expression4j.test.SimpleTest" todir="${test.home}"/>
+			<test name="fr.expression4j.test.ImplementationTest" todir="${test.home}"/>
+			<test name="fr.expression4j.test.ComplexTest" todir="${test.home}"/>
+			<test name="fr.expression4j.test.OptimizationTest" todir="${test.home}"/>
+			<test name="fr.expression4j.test.BasicTest" todir="${test.home}"/>
+			<test name="fr.expression4j.test.ConfigurationTest" todir="${test.home}"/>
+	
+		</junit>
+		<taskdef name="junitreport" classname="org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator"/>
+		<junitreport>
+			<fileset dir="${test.home}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report format="frames" todir="${test.home}/results"/>
+			<!-- <report format="noframes" styledir="${test.home}/xsl" todir="."/> -->
+		</junitreport>
+	</target>
+	
+	<!--
+	<target name="mail" depends="unitTesting">			
+		<tstamp/>
+		<mimemail messageMimeType="text/html"
+			messageFile="${test.home}/junit-noframes.html" tolist="@"	mailhost="PEGASE" subject="JUnit Results: ${TODAY}"
+				from="@" />
+	</target>
+	-->
+
+</project>

@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+  
+  
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+  <title>agregated</title>
+  <style type="text/css"><!--
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>
+      
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+
+        <tbody>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="width: 150px; background-color: rgb(51, 51, 255);"><img style="width: 201px; height: 85px;" alt="Expression4j" src="../image/expression4j.PNG" /></td>
+
+
+
+
+            <td style="text-align: center; background-color: rgb(51, 51, 255);"><big style="font-style: italic; color: rgb(255, 255, 255);"><big><big><big><big>Expression4J</big></big></big></big></big></td>
+
+
+
+
+          </tr>
+
+
+
+
+        
+        
+        
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>
+      
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+
+        <tbody>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="vertical-align: top; height: 44px; background-color: rgb(204, 204, 204); width: 150px;"></td>
+
+
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 44px; font-style: italic; width: 757px;">
+            
+            
+            
+            <h2>Sample &gt; Custom expression element</h2>
+
+
+
+
+            </td>
+
+
+
+
+          </tr>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 339px; width: 150px;"><a href="../index.html">About</a><br />
+
+
+
+
+            <a href="../document.html">Documentation</a><br />
+
+
+
+
+Sample<br />
+
+
+
+
+&nbsp; &nbsp; <a href="simpleexp.html">Simple
+expression</a><br />
+
+
+
+
+&nbsp; &nbsp; <a href="agregated.html">Agregated expression</a><br />
+
+
+
+
+&nbsp; &nbsp; <a href="predefined.html">Predefined
+function</a><br />
+
+
+
+
+&nbsp; &nbsp; <a href="userdefine.html">User
+define function</a><br />
+
+
+&nbsp; &nbsp; Custom element<br />
+
+
+
+
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=156661">Download</a></td>
+
+
+
+
+            <td style="vertical-align: top; height: 339px; width: 757px;">
+            
+            
+            
+            <h3>Create a custom element like string, boolean or matrix</h3>
+
+
+
+
+A custom expression element&nbsp;is constitued by :<br />
+
+
+
+
+            
+            
+            
+            <ul>
+
+
+
+
+              <li>the ExpressionElement class used to parse the custom element</li>
+
+
+
+
+              <li><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>the MathematicalElement class used to store the custom element value.</li>
+
+
+
+
+              <li>all OperatorImpl class used to compute custom element with other predefine element or custom element</li>
+
+
+
+
+              
+
+            
+            
+            
+            </ul>
+
+
+
+
+Expression does not support space. If spaces are present in the
+expression, the parsin will generate an error.<br />
+
+
+            <br />
+
+
+            
+            
+            <h3>Add String element to <span style="color: rgb(51, 51, 255); font-style: italic;">Expression4j</span></h3>
+
+
+
+
+            
+            
+            
+            <ol>
+
+
+              <li>Define the MathematicalElement used to store String element.<br />
+
+
+                <br />
+
+
+                
+                
+                <pre><span class="syntax8">public</span> <span class="syntax10">class</span> StringMathematicalElement <span class="syntax8">implements</span> MathematicalElement <span class="syntax18">{</span><br /><br />        <span class="syntax2">//</span><span class="syntax2">parameter</span><span class="syntax2"> </span><span class="syntax2">value</span><span class="syntax2"> </span><span class="syntax2">used</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">store</span><span class="syntax2"> </span><span class="syntax2">element</span><span class="syntax2"> </span><span class="syntax2">in</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">config</span><span class="syntax2"> </span><span class="syntax2">file.</span><br />        <span class="syntax8">public</span> <span class="syntax8">final</span> <span class="syntax8">static</span> String STRING_VALUE <span class="syntax18">=</span> <span class="syntax13">"</span><span class="syntax13">stringValue</span><span class="syntax13">"</span>; <br /><br />        <span class="syntax8">private</span> String stringValue;<br />        <br />        <span class="syntax8">public</span> <span class="syntax6">StringMathematicalElement</span>(String value) <span class="syntax18">{</span><br />                <span class="syntax14">super</span>();<br />                <span class="syntax14">this</span>.stringValue <span class="syntax18">=</span> value;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">double</span> <span class="syntax6">getComplexValue</span>() <span class="syntax8">throws</span> MathematicalException <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">no</span><span class="syntax2"> </span><span class="syntax2">used</span><br />                <span class="syntax8">return</span> <span class="syntax5">0</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> Properties <span class="syntax6">getProperties</span>() <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">used</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">store</span><span class="syntax2"> </span><span class="syntax2">objet</span><span class="syntax2"> </span><span class="syntax2">in</span><span class="syntax2"> </span><span class="syntax2">xml</span><span class="syntax2"> </span><span class="syntax2">file</span><span class="syntax2"> </span><span class="syntax2">(used</span><span class="syntax2"> </span><span class="syntax2">by</span><span class="syntax2"> </span><span class="syntax2">configuration</span><span class="syntax2"> </span><span class="syntax2">manager)</span><br />                Properties result <span class="syntax18">=</span> <span class="syntax8">new</span> <span class="syntax6">Properties</span>();<br />                result.<span class="syntax6">put</span>(STRING_VALUE,stringValue);<br />                <span class="syntax8">return</span> result;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">double</span> <span class="syntax6">getRealValue</span>() <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">not</span><span class="syntax2"> </span><span class="syntax2">used</span><br />                <span class="syntax8">return</span> <span class="syntax5">0</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">int</span> <span class="syntax6">getType</span>() <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">new</span><span class="syntax2"> </span><span class="syntax2">constant</span><span class="syntax2"> </span><span class="syntax2">for</span><span class="syntax2"> </span><span class="syntax2">String</span><span class="syntax2"> </span><span class="syntax2">type.</span><br />                <span class="syntax8">return</span> <span class="syntax5">5</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> Object <span class="syntax6">getValue</span>() <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">get</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">value</span><span class="syntax2"> </span><span class="syntax2">of</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">String</span><span class="syntax2"> </span><span class="syntax2">as</span><span class="syntax2"> </span><span class="syntax2">an</span><span class="syntax2"> </span><span class="syntax2">Object.</span><br />                <span class="syntax8">return</span> stringValue;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">void</span> <span class="syntax6">setProperties</span>(Properties properties) <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">used</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">store</span><span class="syntax2"> </span><span class="syntax2">objet</span><span class="syntax2"> </span><span class="syntax2">in</span><span class="syntax2"> </span><span class="syntax2">xml</span><span class="syntax2"> </span><span class="syntax2">file</span><span class="syntax2"> </span><span class="syntax2">(used</span><span class="syntax2"> </span><span class="syntax2">by</span><span class="syntax2"> </span><span class="syntax2">configuration</span><span class="syntax2"> </span><span class="syntax2">manager)</span><br />                stringValue <span class="syntax18">=</span> (String) properties.<span class="syntax6">getProperty</span>(STRING_VALUE);<br />        <span class="syntax18">}</span><br /><br /><span class="syntax18">}</span><br /></pre>
+
+
+              </li>
+
+
+              <li>Define the ExpressionElement class used to parse the
+new String element. String element are delimited by &lt; ' &gt;. <br />
+
+The
+sample is simple and does not support ' in sting.<br />
+
+
+                <br />
+
+
+                
+                
+                <pre><span class="syntax8">public</span> <span class="syntax10">class</span> StringExpressionElement <span class="syntax8">implements</span> ExpressionElement <span class="syntax18">{</span><br /><br />        <span class="syntax8">public</span> <span class="syntax6">StringExpressionElement</span>() <span class="syntax18">{</span><br />                <span class="syntax14">super</span>();<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax1">/*</span><span class="syntax1"> </span><span class="syntax1">(non-Javadoc)</span><br /><span class="syntax1">        </span><span class="syntax1"> </span><span class="syntax1">*</span><span class="syntax1"> </span><span class="syntax1">@see</span><span class="syntax1"> </span><span class="syntax1">fr.expression4j.basic.ExpressionElement#parseElement(java.lang.String,</span><span class="syntax1"><br />           </span><span class="syntax1">fr.expression4j.basic.ParseInfo)</span><br /><span class="syntax1">        </span><span class="syntax1"> </span><span class="syntax1">*/</span><br />        <span class="syntax8">public</span> <span class="syntax10">boolean</span> <span class="syntax6">parseElement</span>(String expression, ExpressionModel expressionModel,<br />                        ParseInfo parseInfo, Catalog catalog, List functionParameters, <br />                        <span class="syntax10">int</span> priorityOperatorLevel) <span class="syntax8">throws</span> ParsingException <span class="syntax18">{</span><br />                <span class="syntax10">int</span> startPos <span class="syntax18">=</span> parseInfo.<span class="syntax6">getEndPos</span>();<br />                <span class="syntax10">int</span> currentPos <span class="syntax18">=</span> parseInfo.<span class="syntax6">getEndPos</span>();<br />                <br />                <span class="syntax2">//</span><span class="syntax2">check</span><span class="syntax2"> </span><span class="syntax2">if</span><span class="syntax2"> </span><span class="syntax2">current</span><span class="syntax2"> </span><span class="syntax2">position</span><span class="syntax2"> </span><span class="syntax2">start</span><span class="syntax2"> </span><span class="syntax2">with</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">'</span><br />                <span class="syntax8">if</span> (ExpressionElementUtil.<span class="syntax6">checkPosition</span>(expression,currentPos) <span class="syntax18">&amp;</span><span class="syntax18">&amp;</span><br />                        expression.<span class="syntax6">charAt</span>(currentPos) <span class="syntax18">=</span><span class="syntax18">=</span> <span class="syntax13">'</span><span class="syntax13">\'</span><span class="syntax13">'</span>) <span class="syntax18">{</span><br />                        currentPos <span class="syntax18">+</span><span class="syntax18">+</span>;<br />                        <br />                        <span class="syntax2">//</span><span class="syntax2">lokk</span><span class="syntax2"> </span><span class="syntax2">for</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">end</span><span class="syntax2"> </span><span class="syntax2">'</span><br />                        <span class="syntax8">while</span> (ExpressionElementUtil<br />                                        .<span class="syntax6">checkPosition</span>(expression,currentPos)  <span class="syntax18">&amp;</span><span class="syntax18">&amp;</span> <br />                                        expression.<span class="syntax6">charAt</span>(currentPos) <span class="syntax18">!</span><span class="syntax18">=</span> <span class="syntax13">'</span><span class="syntax13">\'</span><span class="syntax13">'</span>) <span class="syntax18">{</span><br />                                currentPos <span class="syntax18">+</span><span class="syntax18">+</span>;<br />                        <span class="syntax18">}</span><br />                        <br />                        <span class="syntax8">if</span> (expression.<span class="syntax6">charAt</span>(currentPos) <span class="syntax18">!</span><span class="syntax18">=</span> <span class="syntax13">'</span><span class="syntax13">\'</span><span class="syntax13">'</span>) <span class="syntax18">{</span><br />                                <span class="syntax2">//</span><span class="syntax2">not</span><span class="syntax2"> </span><span class="syntax2">found</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">end</span><span class="syntax2"> </span><span class="syntax2">of</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">string.</span><br />                                <span class="syntax8">return</span> <span class="syntax14">false</span>;<br />                        <span class="syntax18">}</span><br /><br />                        <span class="syntax2">//</span><span class="syntax2">found</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">ending</span><span class="syntax2"> </span><span class="syntax2">'</span><br />                        <span class="syntax2">//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">corresponding</span><span class="syntax2"> </span><span class="syntax2">TreeElement</span><span class="syntax2"> </span><span class="syntax2">of</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">StringExpressionElement</span><br />                        String valueString <span class="syntax18">=</span> expression<br />                                            .<span class="syntax6">substring</span>(startPos<span class="syntax18">+</span><span class="syntax5">1</span>,currentPos);<br />                        MathematicalElement value <span class="syntax18">=</span> <br />                                            <span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(valueString); <br />                        TreeElement result <span class="syntax18">=</span><span style="font-family: mon;"><span style="font-weight: bold;"> </span></span><span class="syntax8">new</span> <span class="syntax6">TreeElement</span>(TreeElement.TREE_ELEMENT_TYPE_VALUE,<br />                                                         <span class="syntax14">null</span>,<span class="syntax14">null</span>,value,<span class="syntax6">getName</span>(),<span class="syntax14">null</span>,<span class="syntax14">null</span>);<br />                        parseInfo.<span class="syntax6">setTreeElement</span>(result);<br />                        parseInfo.<span class="syntax6">setEndPos</span>(currentPos<span class="syntax18">+</span><span class="syntax5">1</span>);<br />                        <span class="syntax8">return</span> <span class="syntax14">true</span>;<br />                <span class="syntax18">}</span><br />                <br />                <span class="syntax8">return</span> <span class="syntax14">false</span>;<br />                <br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> String <span class="syntax6">getName</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax13">"</span><span class="syntax13">StringExpressionElement</span><span class="syntax13">"</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> MathematicalElement <span class="syntax6">evaluate</span>(TreeElement element, Catalog catalog, <br />                              OperatorManager operatorManager, Parameters parameters, <br />                              ExpressionModel model) <span class="syntax8">throws</span> EvalException <span class="syntax18">{</span><br />                <span class="syntax2">//</span><span class="syntax2">throw</span><span class="syntax2"> </span><span class="syntax2">an</span><span class="syntax2"> </span><span class="syntax2">exception.</span><span class="syntax2"> </span><br />                <span class="syntax2">//</span><span class="syntax2">evaluate</span><span class="syntax2"> </span><span class="syntax2">method</span><span class="syntax2"> </span><span class="syntax2">is</span><span class="syntax2"> </span><span class="syntax2">reserved</span><span class="syntax2"> </span><span class="syntax2">for</span><span class="syntax2"> </span><span class="syntax2">function</span><span class="syntax2"> </span><span class="syntax2">or</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">custom</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">element</span><br />                <span class="syntax2">//</span><span class="syntax2">like</span><span class="syntax2"> </span><span class="syntax2">"if"</span><span class="syntax2"> </span><span class="syntax2">operator.</span><br />                <span class="syntax8">throw</span> <span class="syntax8">new</span> <span class="syntax6">EvalException</span>(<span class="syntax13">"</span><span class="syntax13">Cannot</span><span class="syntax13"> </span><span class="syntax13">evaluate</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> <span class="syntax6">getName</span>());<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> String <span class="syntax6">toString</span>(TreeElement element, ExpressionModel expressionModel) <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax13">"</span><span class="syntax13">&lt;</span><span class="syntax13">"</span> <span class="syntax18">+</span> <span class="syntax6">getName</span>() <span class="syntax18">+</span> <span class="syntax13">"</span><span class="syntax13">&gt;</span><span class="syntax13">"</span>;<br />        <span class="syntax18">}</span><br /><br /><span class="syntax18">}</span>
+                </pre>
+
+
+                <br />
+
+
+              </li>
+
+
+              <li>Define OperatorImpl class. Two operators is define.
+Operator "+" to manage String concatenation and operator "+"<br />
+
+ to manage
+Integer and String concatenation.<br />
+
+
+                <br />
+
+
+                
+                
+                <pre><span class="syntax8">public</span> <span class="syntax10">class</span> OperatorPlusStringReal <span class="syntax8">implements</span> OperatorImpl <span class="syntax18">{</span><br /><br />        <span class="syntax8">public</span> <span class="syntax6">OperatorPlusStringReal</span>() <span class="syntax18">{</span><br />                <span class="syntax14">super</span>();<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> MathematicalElement <span class="syntax6">compute</span>(MathematicalElement leftElement, <br />                              MathematicalElement rightElement) <span class="syntax8">throws</span> EvalException <span class="syntax18">{</span><br /><br />                StringBuffer result <span class="syntax18">=</span> <span class="syntax8">new</span> <span class="syntax6">StringBuffer</span>();<br />                <br />                <span class="syntax8">if</span> (leftElement.<span class="syntax6">getType</span>() <span class="syntax18">=</span><span class="syntax18">=</span> <span class="syntax5">1</span>) <span class="syntax18">{</span><br />                        result.<span class="syntax6">append</span>(leftElement.<span class="syntax6">getRealValue</span>());<br />                <span class="syntax18">}</span><br />                <span class="syntax8">else</span> <span class="syntax18">{</span><br />                        result.<span class="syntax6">append</span>(leftElement.<span class="syntax6">getValue</span>());<br />                <span class="syntax18">}</span><br />                <br />                <span class="syntax8">if</span> (rightElement.<span class="syntax6">getType</span>() <span class="syntax18">=</span><span class="syntax18">=</span> <span class="syntax5">1</span>) <span class="syntax18">{</span><br />                        result.<span class="syntax6">append</span>(rightElement.<span class="syntax6">getRealValue</span>());<br />                <span class="syntax18">}</span><br />                <span class="syntax8">else</span> <span class="syntax18">{</span><br />                        result.<span class="syntax6">append</span>(rightElement.<span class="syntax6">getValue</span>());<br />                <span class="syntax18">}</span><br /><br />                <span class="syntax8">return</span> <span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(result.<span class="syntax6">toString</span>());<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">int</span> <span class="syntax6">getLeftOperandeType</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax5">5</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> String <span class="syntax6">getOperatorName</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax13">"</span><span class="syntax13">plus</span><span class="syntax13">"</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">int</span> <span class="syntax6">getRightOperandeType</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax5">1</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">boolean</span> <span class="syntax6">isUnaryOperator</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax14">false</span>;<br />        <span class="syntax18">}</span><br /><br /><span class="syntax18">}</span><br /><br /></pre>
+
+
+                <br />
+
+
+                
+                
+                <pre><span class="syntax8">public</span> <span class="syntax10">class</span> OperatorPlusStringString <span class="syntax8">implements</span> OperatorImpl <span class="syntax18">{</span><br /><br />        <span class="syntax8">public</span> <span class="syntax6">OperatorPlusStringString</span>() <span class="syntax18">{</span><br />                <span class="syntax14">super</span>();<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> MathematicalElement <span class="syntax6">compute</span>(MathematicalElement leftElement, <br />                       MathematicalElement rightElement) <span class="syntax8">throws</span> EvalException <span class="syntax18">{</span><br />                <span class="syntax8">if</span> (leftElement.<span class="syntax6">getType</span>() <span class="syntax18">!</span><span class="syntax18">=</span> <span class="syntax5">5</span>) <span class="syntax18">{</span><br />                        <span class="syntax8">throw</span> <span class="syntax8">new</span> <span class="syntax6">EvalException</span>(<br />                           <span class="syntax13">"</span><span class="syntax13">Left</span><span class="syntax13"> </span><span class="syntax13">element</span><span class="syntax13"> </span><span class="syntax13">is</span><span class="syntax13"> </span><span class="syntax13">not</span><span class="syntax13"> </span><span class="syntax13">a</span><span class="syntax13"> </span><span class="syntax13">StringMathematicalElement</span><span class="syntax13">"</span>);<br />                <span class="syntax18">}</span><br />                <br />                <span class="syntax8">if</span> (rightElement.<span class="syntax6">getType</span>() <span class="syntax18">!</span><span class="syntax18">=</span> <span class="syntax5">5</span>) <span class="syntax18">{</span><br />                        <span class="syntax8">throw</span> <span class="syntax8">new</span> <span class="syntax6">EvalException</span>(<span class="syntax13"><br />                           "</span><span class="syntax13">Right</span><span class="syntax13"> </span><span class="syntax13">element</span><span class="syntax13"> </span><span class="syntax13">is</span><span class="syntax13"> </span><span class="syntax13">not</span><span class="syntax13"> </span><span class="syntax13">a</span><span class="syntax13"> </span><span class="syntax13">StringMathematicalElement</span><span class="syntax13">"</span>);<br />                <span class="syntax18">}</span><br /><br />                StringBuffer result <span class="syntax18">=</span> <span class="syntax8">new</span> <span class="syntax6">StringBuffer</span>((String)<br />                                           leftElement.<span class="syntax6">getValue</span>());<br />                result.<span class="syntax6">append</span>((String) rightElement.<span class="syntax6">getValue</span>());<br />                <span class="syntax8">return</span> <span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(result.<span class="syntax6">toString</span>());<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">int</span> <span class="syntax6">getLeftOperandeType</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax5">5</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> String <span class="syntax6">getOperatorName</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax13">"</span><span class="syntax13">plus</span><span class="syntax13">"</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">int</span> <span class="syntax6">getRightOperandeType</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax5">5</span>;<br />        <span class="syntax18">}</span><br /><br />        <span class="syntax8">public</span> <span class="syntax10">boolean</span> <span class="syntax6">isUnaryOperator</span>() <span class="syntax18">{</span><br />                <span class="syntax8">return</span> <span class="syntax14">false</span>;<br />        <span class="syntax18">}</span><br /><br /><span class="syntax18">}</span><br /></pre>
+
+
+              </li>
+
+
+              <li>Sample class who use the new StringExpressionElement.<br />
+
+
+                
+                
+                <pre><span class="syntax8">public</span> <span class="syntax10">class</span> CustomExpressionElement2 <span class="syntax18">{</span><br /><br /><br /><span class="syntax8">public</span> <span class="syntax8">static</span> <span class="syntax10">void</span> <span class="syntax6">main</span>(String[] args) <span class="syntax18">{</span><br />   <span class="syntax8">try</span> <span class="syntax18">{</span><br />     <span class="syntax2">//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">model</span><br />     ExpressionModel stringExpressionModel <span class="syntax18">=</span> <br />          ExpressionModelFactory.<span class="syntax6">createExpressionModel</span>(<span class="syntax13">"</span><span class="syntax13">StringExpressionModel</span><span class="syntax13">"</span>);<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">add</span><span class="syntax2"> </span><span class="syntax2">binary</span><span class="syntax2"> </span><span class="syntax2">operator</span><span class="syntax2"> </span><span class="syntax2">supported</span><span class="syntax2"> </span><span class="syntax2">by</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">model</span><br />     stringExpressionModel.<span class="syntax6">addBinaryOperator</span>(<span class="syntax8">new</span> <span class="syntax6">OperatorPlus</span>(),<span class="syntax5">1</span>);<br /><br />     <span class="syntax2">//</span><span class="syntax2">add</span><span class="syntax2"> </span><span class="syntax2">custom</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">element</span><br />     stringExpressionModel.<span class="syntax6">addExpressionElement</span>(<span class="syntax8">new</span> <span class="syntax6">StringExpressionElement</span>(),<span class="syntax5">1</span>);<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">add</span><span class="syntax2"> </span><span class="syntax2">standardexpression</span><span class="syntax2"> </span><span class="syntax2">element</span><br />     stringExpressionModel.<span class="syntax6">addExpressionElement</span>(<br />         <span class="syntax8">new</span> <span class="syntax6">ComplexOrRealExpressionElement</span>(),<span class="syntax5">2</span>);<br />     stringExpressionModel.<span class="syntax6">addExpressionElement</span>(<span class="syntax8"><br />         new</span> <span class="syntax6">FunctionExpressionElement</span>(),<span class="syntax5">3</span>);<br />     stringExpressionModel.<span class="syntax6">addExpressionElement</span>(<br />         <span class="syntax8">new</span> <span class="syntax6">ConstantOrVariableExpressionElement</span>(),<span class="syntax5">4</span>);<br />     stringExpressionModel.<span class="syntax6">addExpressionElement</span>(<br />         <span class="syntax8">new</span> <span class="syntax6">ParenthesisExpressionElement</span>(),<span class="syntax5">5</span>);<br /><br />     <span class="syntax2">//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">operator</span><span class="syntax2"> </span><span class="syntax2">manager</span><br />     OperatorManager stringOperatorManager <span class="syntax18">=</span> <br />         OperatorManagerFactory.<span class="syntax6">createOperatorManager</span>(<span class="syntax13">"</span><span class="syntax13">stringOperatorManager</span><span class="syntax13">"</span>);<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">add</span><span class="syntax2"> </span><span class="syntax2">operator</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">previous</span><span class="syntax2"> </span><span class="syntax2">model</span><br />     stringOperatorManager.<span class="syntax6">addOperatorImpl</span>(<span class="syntax8">new</span> <span class="syntax6">OperatorPlusStringString</span>());<br />     stringOperatorManager.<span class="syntax6">addOperatorImpl</span>(<span class="syntax8">new</span> <span class="syntax6">OperatorPlusStringReal</span>());<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">an</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">with</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">model</span><br />     Expression expression <span class="syntax18">=</span> <br />         ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f(x)='toto'+x+'titi'</span><span class="syntax13">"</span>,<br />            ExpressionFactory.<span class="syntax6">getCatalog</span>(),stringExpressionModel);<br />     Expression expression2 <span class="syntax18">=</span> <br />         ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">g(x,y)=f(y)+'</span><span class="syntax13"> </span><span class="syntax13">'+(x+'</span><span class="syntax13"> </span><span class="syntax13">'+f(x+y))</span><span class="syntax13">"</span>,<br />            ExpressionFactory.<span class="syntax6">getCatalog</span>(),stringExpressionModel);<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">compute</span><span class="syntax2"> </span><span class="syntax2">expression</span><br />     Parameters parameters <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createParameters</span>();<br />     parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,<span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(<span class="syntax13">"</span><span class="syntax13">test</span><span class="syntax13">"</span>));<br />     parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,<span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(<span class="syntax13">"</span><span class="syntax13">une</span><span class="syntax13"> </span><span class="syntax13">valeur</span><span class="syntax13">"</span>));<br />     MathematicalElement result <span class="syntax18">=</span> <br />         expression2.<span class="syntax6">evaluate</span>(stringOperatorManager,parameters);<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">display</span><span class="syntax2"> </span><span class="syntax2">result</span><br />     System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">result:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> result.<span class="syntax6">getValue</span>());<br />                        <br />     <span class="syntax2">//</span><span class="syntax2">compute</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">with</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">real</span><br />     <span class="syntax8">for</span> (<span class="syntax10">int</span> i<span class="syntax18">=</span><span class="syntax5">0</span>; i<span class="syntax18">&lt;</span><span class="syntax5">10</span>; i<span class="syntax18">+</span><span class="syntax18">+</span>) <span class="syntax18">{</span><br />         parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,NumberFactory.<span class="syntax6">createReal</span>(i));<br />         parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">y</span><span class="syntax13">"</span>,<span class="syntax8">new</span> <span class="syntax6">StringMathematicalElement</span>(<span class="syntax13">"</span><span class="syntax13">une</span><span class="syntax13"> </span><span class="syntax13">valeur</span><span class="syntax13">"</span>));<br />         result <span class="syntax18">=</span> expression2.<span class="syntax6">evaluate</span>(stringOperatorManager,parameters);<br /><br />     <span class="syntax2">    //</span><span class="syntax2">display</span><span class="syntax2"> </span><span class="syntax2">result</span><br />         System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">result:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> result.<span class="syntax6">getValue</span>());<br />     }<br /><br /><br />   <span class="syntax18">}</span><br />   <span class="syntax8">catch</span> (Exception e) <span class="syntax18">{</span><br />       System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br />   <span class="syntax18">}</span><br />                <br />  <span class="syntax18">}</span><br />        <br /><span class="syntax18">}</span><br /><br /></pre>
+
+
+              </li>
+
+
+            
+            
+            </ol>
+
+
+
+
+            
+            
+            
+            <h3><span style="font-style: italic; color: rgb(51, 51, 255);"></span></h3>
+
+
+
+
+            
+            
+            
+            <pre><span class="gutter"></span><span class="gutter"></span><span class="syntax8"></span><span class="gutter"><br /><br /></span></pre>
+
+
+
+
+            <span class="gutter">&nbsp;</span> </td>
+
+
+
+
+          </tr>
+
+
+
+
+        
+        
+        
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="text-align: center;"><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156661&amp;type=4" alt="SourceForge.net Logo" border="0" height="37" width="125" /></a> <a href="http://sourceforge.net/donate/index.php?group_id=156661"><img src="http://images.sourceforge.net/images/project-support.jpg" alt="Support This Project" border="0" height="32" width="88" /> </a> </td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+</body>
+</html>

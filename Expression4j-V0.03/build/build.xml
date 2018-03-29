@@ -1,0 +1,145 @@
+<!--
+//Copyright 2006 Stéphane GINER
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+-->
+
+<project default="help">
+
+	<!-- Only one property must be set for this ant file          -->
+	<!-- "vmhome" must point to the home directory of the project -->
+
+	<property name="home.src"	value="${expression4j.home}/src" />
+	<property name="image"		value="${expression4j.home}/image" />
+	<property name="extlib"		value="${expression4j.home}/extLib" />
+	<property name="src"		value="${image}/src" />
+	<property name="doc"		value="${image}/doc" />
+	<property name="tmp"		value="${image}/tmp" />
+	<property name="lib"		value="${image}/lib" />
+	<property name="test"		value="${image}/test" />
+	<property name="sample"		value="${image}/sample" />
+	<property name="build"		value="${image}/build" />
+
+
+	<target name="help">
+		<echo>Help of this build file</echo>
+		<echo></echo>
+		<echo>expression4j.home value: ${expression4j.home}</echo>
+		<echo></echo>
+		<echo>image    - build all the program</echo>
+		<echo>test     - run all test and generate report</echo>
+		<echo>all      - build the program and run the test</echo> 
+	</target>
+	
+	<target name="clearimage">
+		<delete dir="${image}" />
+	</target>
+	
+	<!-- make directory for image -->
+	<target name="makedir">
+		<!-- create the image directory -->
+		<echo>Create image directories.</echo>
+		<mkdir dir="${image}"/>
+		<mkdir dir="${src}"/>
+		<mkdir dir="${doc}"/>
+		<mkdir dir="${doc}/api"/>
+		<mkdir dir="${tmp}"/>
+		<mkdir dir="${lib}"/>
+		<mkdir dir="${extlib}"/>
+		<mkdir dir="${sample}"/>
+		<mkdir dir="${test}"/>
+		<mkdir dir="${build}"/>
+	</target>
+	
+	<!-- copy all src into image -->
+	<target name="copysrc">
+		<echo>Copy src files.</echo>
+		<copy todir="${src}">
+			<fileset dir="${home.src}">
+				<exclude name="**/CVS/**"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<!-- do the javadoc -->
+	<target name="doc">
+		<echo>Do javadoc.</echo>
+		<javadoc
+			useexternalfile="yes"
+           destdir="${doc}/api"
+           author="true"
+           version="true"
+           use="true"
+           windowtitle="Expression4J API">
+
+		    <packageset dir="${home.src}" defaultexcludes="yes">
+		      <include name="fr/**"/>
+		    </packageset>
+
+			<!--
+		    <doctitle><![CDATA[<h1>Expression4J</h1>]]></doctitle>
+		    <bottom><![CDATA[<i>Copyright &#169; 2006 Stephane GINER. All Rights Reserved.</i>]]></bottom>
+		    <tag name="todo" scope="all" description="To do:"/>
+			<group title="Group 1 Packages" packages="fr.**"/>
+			<link offline="true" href="http://java.sun.com/products/jdk/1.2/docs/api/" packagelistLoc="C:\tmp"/>
+		    <link href="http://developer.java.sun.com/developer/products/xml/docs/api/"/>
+		    -->
+  </javadoc>
+
+		
+	</target>
+	
+	<target name="image" depends="clearimage,makedir,copysrc,doc">
+		<echo>Build all the program</echo>
+		
+		<!-- create the tmp directory -->
+		<mkdir dir="${tmp}"/>
+		<mkdir dir="${tmp}/classes"/>
+		
+		<!-- compile all java file into tmp directory -->
+		<javac srcdir="${home.src}" destdir="${tmp}/classes" classpath="${extlib}/expression4jCFG.jar;${extlib}/xbean.jar;${extlib}/jsr173_1.0_api.jar" />
+		
+		<!-- create the jar file in bin directory -->
+		<jar destfile="${lib}/expression4j.jar" basedir="${tmp}/classes"></jar>
+
+		<!-- copy xml bean jar file into lib directory -->
+		<copy file="${extlib}/expression4jCFG.jar" todir="${lib}"/>		
+
+		<!-- delete the tmp directory -->
+		<delete dir="${tmp}"/>
+		
+		<!-- copy buil file into build directory -->
+		<copy file="${expression4j.home}/build/build.xml" todir="${build}"/>		
+		
+		<!-- copy test file into test directory -->
+		<copy file="${expression4j.home}/test/build.xml" todir="${test}"/>	
+		
+		<!-- copy html doc file into doc directory -->
+		<copy todir="${doc}">
+			<fileset dir="${expression4j.home}/doc">
+				<exclude name="*CVS*"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<!-- lunch test on expression4j -->
+	<target name="test">
+		<ant antfile="../test/build.xml">
+			<property name="expression4j.test.home" value="${test}"/>
+		</ant>
+	</target>
+
+	<!-- lunch build and test -->
+	<target name="all" depends="image,test"/>
+
+</project>

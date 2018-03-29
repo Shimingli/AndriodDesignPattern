@@ -1,0 +1,340 @@
+2450 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+2450 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+2450 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+2450 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+2474 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+2474 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+2474 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+2474 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+2501 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+2501 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+2501 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+2501 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2+3+4+5
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2+3+4+5
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2+3+4+5
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2+3+4+5
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+2503 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+2517 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2527 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2528 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+2529 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2529 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 7
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 8
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 8
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 8
+2530 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 8
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2530 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 9
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2531 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 10
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 10
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 10
+2532 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 10
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2532 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 11
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2533 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 12
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 12
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 12
+2533 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 12
+2533 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+2533 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+2533 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+2533 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created

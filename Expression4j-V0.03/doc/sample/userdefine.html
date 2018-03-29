@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+  
+
+
+  
+  <title>userdefine</title>
+  <style type="text/css"><!--
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="width: 150px; background-color: rgb(51, 51, 255);"><img style="width: 201px; height: 85px;" alt="Expression4j" src="../image/expression4j.PNG" /></td>
+
+
+            <td style="text-align: center; background-color: rgb(51, 51, 255);"><big style="font-style: italic; color: rgb(255, 255, 255);"><big><big><big><big>Expression4J</big></big></big></big></big></td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td>
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+        <tbody>
+
+
+          <tr>
+
+
+            <td style="vertical-align: top; height: 44px; background-color: rgb(204, 204, 204); width: 150px;"></td>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 44px; font-style: italic; width: 725px;">
+            
+            <h2>Sample &gt; User define function</h2>
+
+
+            </td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+            <td style="vertical-align: top; background-color: rgb(204, 204, 204); height: 339px; width: 150px;"><a href="../index.html">About</a><br />
+
+
+            <a href="../document.html">Documentation</a><br />
+
+
+Sample<br />
+
+
+&nbsp; &nbsp; <a href="simpleexp.html">Simple
+expression</a><br />
+
+
+&nbsp; &nbsp; <a href="agregated.html">Agregated
+expression</a><br />
+
+
+&nbsp; &nbsp; <a href="predefined.html">Predefined
+function</a><br />
+
+
+&nbsp; &nbsp; User define function<br />
+&nbsp; &nbsp; <a href="customElement.html">Custom element</a><br />
+
+
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=156661">Download</a></td>
+
+
+            <td style="vertical-align: top; height: 339px; width: 725px;">
+            
+            <h3>Create an agregated expression</h3>
+
+
+An user define function is constitued by :<br />
+
+
+            
+            <ul>
+
+
+              <li>a specific class who implement Expression
+interface.</li>
+
+
+            
+            </ul>
+
+
+the sample bellow indicate how to construct the "factoriel" user define
+function. "Factoriel" is the class who implement the factoriel
+function.
+            <br />
+
+
+            
+            <h3>My first user define function with <span style="font-style: italic; color: rgb(51, 51, 255);">expression4j</span></h3>
+
+
+Factoriel class code:<br />
+
+
+            <br />
+
+
+            
+            <pre><span class="syntax8">public</span> <span class="syntax8">static</span> <span class="syntax10">class</span> Factoriel <span class="syntax8">extends</span> AbstractFunction <span class="syntax18">{</span><br /><span class="syntax3">	 /**</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax3">compute</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">factoriel</span><span class="syntax3"> </span><span class="syntax3">of</span><span class="syntax3"> </span><span class="syntax3">a</span><span class="syntax3"> </span><span class="syntax3">number</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax12">@param</span><span class="syntax3"> </span><span class="syntax3">x</span><span class="syntax3"> </span><span class="syntax3">number</span><span class="syntax3"> </span><span class="syntax3">to</span><span class="syntax3"> </span><span class="syntax3">compute</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax12">@return</span><span class="syntax3"> </span><span class="syntax3">factoriel</span><span class="syntax3"> </span><span class="syntax3">of</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">number</span><span class="syntax3">.</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*/</span><br /><span class="syntax8">	 private</span> <span class="syntax10">double</span> <span class="syntax6">fact</span>(<span class="syntax10">double</span> x) <span class="syntax18">{</span><br /><span class="syntax8">		 if</span> (x <span class="syntax18">=</span><span class="syntax18">=</span> <span class="syntax5">0</span>) <span class="syntax18">{</span><br /><span class="syntax8">			 return</span> <span class="syntax5">1</span>;<br /><span class="syntax18">		 }</span><br /><span class="syntax8">		 return</span> x <span class="syntax18">*</span> <span class="syntax6">fact</span>(x<span class="syntax18">-</span><span class="syntax5">1</span>);<br /><span class="syntax18">	 }<br /><br /></span><span class="syntax3">	 /**</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax3">evaluation</span><span class="syntax3"> </span><span class="syntax3">method</span><span class="syntax3"> </span><span class="syntax3">called</span><span class="syntax3"> </span><span class="syntax3">by</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">Expression4j</span><span class="syntax3"> </span><span class="syntax3">when</span><span class="syntax3"> </span><span class="syntax3">needed</span><span class="syntax3">.</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax12">@param</span><span class="syntax3"> </span><span class="syntax3">parameters</span><span class="syntax3"> </span><span class="syntax3">parameter</span><span class="syntax3"> </span><span class="syntax3">given</span><span class="syntax3"> </span><span class="syntax3">to</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">function</span><span class="syntax3"> </span><span class="syntax3">for</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">evaluation</span><span class="syntax3">.</span><br /><span class="syntax3">	 </span><span class="syntax3"> </span><span class="syntax3">*/</span><br /><span class="syntax8">	 public</span> MathematicalElement <span class="syntax6">evaluate</span>(Parameters parameters) <br />		<span class="syntax8">throws</span> EvalException <span class="syntax18">{</span><br /><span class="syntax8">		try</span> <span class="syntax18">{</span><br />			MathematicalElement me <span class="syntax18">=</span> parameters.<span class="syntax6">getParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>);<br /><span class="syntax10">			double</span> tmpValue <span class="syntax18">=</span> me.<span class="syntax6">getRealValue</span>(); <span class="syntax8"><br />			if</span> (tmpValue <span class="syntax18">&lt;</span> <span class="syntax5">0</span>) <span class="syntax18">{</span><br /><span class="syntax8">				throw</span> <span class="syntax8">new</span> <span class="syntax6">EvalException</span>(<span class="syntax13"><br />					"</span><span class="syntax13">Cannot</span><span class="syntax13"> </span><span class="syntax13">evaluate</span><span class="syntax13"> </span><span class="syntax13">fact</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">" + <br />					"negativ</span><span class="syntax13"> </span><span class="syntax13">number.</span><span class="syntax13">"</span>);<br /><span class="syntax18">			}</span><br /><span class="syntax10">			double</span> result <span class="syntax18">=</span> <span class="syntax6">fact</span>(tmpValue);<br /><span class="syntax8">			return</span> NumberFactory.<span class="syntax6">createReal</span>(result);<br /><span class="syntax18">		}</span><br /><span class="syntax8">		catch</span> (ParametersException pe) <span class="syntax18">{</span><br /><span class="syntax8">			throw</span> <span class="syntax8">new</span> <span class="syntax6">EvalException</span>(<span class="syntax13">"</span><span class="syntax13">Cannot</span><span class="syntax13"> </span><span class="syntax13">evaluate</span><span class="syntax13"> </span><span class="syntax13">fact(x).</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> pe);<br /><span class="syntax18">		}</span><br /><span class="syntax18">	}<br /><br /></span><span class="syntax8">	public</span> MathematicalElement <span class="syntax6">evaluate</span>(OperatorManager operatorManager,<br />				Parameters parameters) <span class="syntax8">throws</span> EvalException <span class="syntax18">{</span><br /><span class="syntax8">		return</span> <span class="syntax6">evaluate</span>(parameters);<br /><span class="syntax18">	}<br /><br /></span><span class="syntax8">	public</span> Catalog <span class="syntax6">getCatalog</span>() <span class="syntax18">{</span><br /><span class="syntax8">		return</span> ExpressionFactory.<span class="syntax6">getCatalog</span>();<br /><span class="syntax18">	}<br /><br /></span><span class="syntax3">	/**</span><br /><span class="syntax3">	</span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax3">get</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">function</span><span class="syntax3"> </span><span class="syntax3">name</span><br /><span class="syntax3">	</span><span class="syntax3"> </span><span class="syntax3">*/</span><br /><span class="syntax8">	public</span> String <span class="syntax6">getName</span>() <span class="syntax18">{</span><br /><span class="syntax8">		return</span> <span class="syntax13">"</span><span class="syntax13">fact</span><span class="syntax13">"</span>;<br /><span class="syntax18">	}</span><br /><span class="syntax3"><br />	/**</span><br /><span class="syntax3">	</span><span class="syntax3"> </span><span class="syntax3">*</span><span class="syntax3"> </span><span class="syntax3">get</span><span class="syntax3"> </span><span class="syntax3">parameter</span><span class="syntax3"> </span><span class="syntax3">list</span><span class="syntax3"> </span><span class="syntax3">of</span><span class="syntax3"> </span><span class="syntax3">the</span><span class="syntax3"> </span><span class="syntax3">function</span><span class="syntax3">.</span><br /><span class="syntax3">	</span><span class="syntax3"> </span><span class="syntax3">*/</span><br /><span class="syntax8">	public</span> List <span class="syntax6">getParameters</span>() <span class="syntax18">{</span><br /><span class="syntax2">		//</span><span class="syntax2">this</span><span class="syntax2"> </span><span class="syntax2">util</span><span class="syntax2"> </span><span class="syntax2">method</span><span class="syntax2"> </span><span class="syntax2">get</span><span class="syntax2"> </span><span class="syntax2">one</span><span class="syntax2"> </span><span class="syntax2">parameter</span><span class="syntax2"> </span><span class="syntax2">"x".</span><br /><span class="syntax8">		return</span> ParameterUtil.<span class="syntax6">generateXParameters</span>();<br /><span class="syntax18">	}<br /><br /></span><span class="syntax8">	public</span> ExpressionModel <span class="syntax6">getExpressionModel</span>() <span class="syntax18">{</span><br /><span class="syntax2">		//</span><span class="syntax2"> </span><span class="syntax2">TODO</span><span class="syntax2"> </span><span class="syntax2">Auto-generated</span><span class="syntax2"> </span><span class="syntax2">method</span><span class="syntax2"> </span><span class="syntax2">stub</span><br /><span class="syntax8">		return</span> <span class="syntax14">null</span>;<br /><span class="syntax18">	}</span><br /><span class="syntax18">}</span>
+            </pre>
+
+
+            <br />
+
+
+To use this user define function in Expression4j, you must put it in
+the classpath and use it like this:<br />
+
+
+            <br />
+
+
+            
+            <pre><span class="syntax8">public</span> <span class="syntax8">static</span> <span class="syntax10">void</span> <span class="syntax6">main</span>(String[] args) <span class="syntax18">{</span><br /><span class="syntax8">	try</span> <span class="syntax18">{</span><br /><span class="syntax2">		//</span><span class="syntax2">define</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">specific</span><span class="syntax2"> </span><span class="syntax2">catalog</span><span class="syntax2"> </span><span class="syntax2">(not</span><span class="syntax2"> </span><span class="syntax2">necessary,</span><br /><span class="syntax2">		//</span><span class="syntax2">we</span><span class="syntax2"> </span><span class="syntax2">can</span><span class="syntax2"> </span><span class="syntax2">use</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">default</span><span class="syntax2"> </span><span class="syntax2">catalog</span><span class="syntax2"> </span><span class="syntax2">instead)</span><br />		Catalog catalog <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createCatalog</span>(<span class="syntax13">"</span><span class="syntax13">catalog</span><span class="syntax13">"</span>);<br /><span class="syntax2"><br />		//</span><span class="syntax2">add</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">user</span><span class="syntax2"> </span><span class="syntax2">define</span><span class="syntax2"> </span><span class="syntax2">function</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">catalog</span><br />		catalog.<span class="syntax6">addExpression</span>(<span class="syntax8">new</span> <span class="syntax6">Factoriel</span>());<br /><span class="syntax2"><br />		//</span><span class="syntax2">create</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">expression</span><span class="syntax2"> </span><span class="syntax2">who</span><span class="syntax2"> </span><span class="syntax2">use</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">user</span><span class="syntax2"> </span><span class="syntax2">define</span><span class="syntax2"> </span><span class="syntax2">function</span><br /><span class="syntax2">		//</span><span class="syntax2">dont</span><span class="syntax2"> </span><span class="syntax2">forget</span><span class="syntax2"> </span><span class="syntax2">to</span><span class="syntax2"> </span><span class="syntax2">put</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">catalog</span><span class="syntax2"> </span><span class="syntax2">of</span><span class="syntax2"> </span><span class="syntax2">the</span><span class="syntax2"> </span><span class="syntax2">user</span><span class="syntax2"> </span><span class="syntax2">define</span><span class="syntax2"> </span><span class="syntax2">function</span><br /><span class="syntax2">		//</span><span class="syntax2">if</span><span class="syntax2"> </span><span class="syntax2">default</span><span class="syntax2"> </span><span class="syntax2">catalog</span><span class="syntax2"> </span><span class="syntax2">is</span><span class="syntax2"> </span><span class="syntax2">not</span><span class="syntax2"> </span><span class="syntax2">used.</span><br />		Expression expression1 <span class="syntax18">=</span> <br />			ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f(x)=fact(x+1)</span><span class="syntax13">"</span>,catalog);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">name:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression1.<span class="syntax6">getName</span>());<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression1);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">parameters:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression1.<span class="syntax6">getParameters</span>());<br /><span class="syntax2"><br />		//</span><span class="syntax2">compute</span><span class="syntax2"> </span><span class="syntax2">a</span><span class="syntax2"> </span><span class="syntax2">value</span><br />		MathematicalElement me1 <span class="syntax18">=</span> NumberFactory.<span class="syntax6">createReal</span>(<span class="syntax5">5</span>);<br />		Parameters parameters <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createParameters</span>();<br />		parameters.<span class="syntax6">addParameter</span>(<span class="syntax13">"</span><span class="syntax13">x</span><span class="syntax13">"</span>,me1);<br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression</span><span class="syntax13"> </span><span class="syntax13">h</span><span class="syntax13"> </span><span class="syntax13">:</span><span class="syntax13">"</span> <span class="syntax18">+</span> <br />			expression1.<span class="syntax6">evaluate</span>(parameters));<br /><span class="syntax18">	}</span><br /><span class="syntax8">	catch</span> (Exception e) <span class="syntax18">{</span><br />		System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br /><span class="syntax18">	}</span><br /><span class="syntax18">}</span>
+            </pre>
+
+
+            <br />
+
+
+            <br />
+
+
+            <br />
+
+
+            </td>
+
+
+          </tr>
+
+
+        
+        </tbody>
+      
+      </table>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td style="text-align: center;"><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156661&amp;type=4" alt="SourceForge.net Logo" border="0" height="37" width="125" /></a> <a href="http://sourceforge.net/donate/index.php?group_id=156661"><img src="http://images.sourceforge.net/images/project-support.jpg" alt="Support This Project" border="0" height="32" width="88" /> </a> </td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<br />
+
+
+</body>
+</html>

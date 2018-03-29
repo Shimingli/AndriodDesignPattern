@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+  
+  
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+  <title>simple</title>
+  <style type="text/css"><!--
+.syntax0 {
+color: #000000;
+}
+.syntax1 {
+color: #cc0000;
+}
+.syntax2 {
+color: #ff8400;
+}
+.syntax3 {
+color: #6600cc;
+}
+.syntax4 {
+color: #cc6600;
+}
+.syntax5 {
+color: #ff0000;
+}
+.syntax6 {
+color: #9966ff;
+}
+.syntax7 {
+background: #ffffcc;
+color: #ff0066;
+}
+.syntax8 {
+color: #006699;
+font-weight: bold;
+}
+.syntax9 {
+color: #009966;
+font-weight: bold;
+}
+.syntax10 {
+color: #0099ff;
+font-weight: bold;
+}
+.syntax11 {
+color: #66ccff;
+font-weight: bold;
+}
+.syntax12 {
+color: #02b902;
+}
+.syntax13 {
+color: #ff00cc;
+}
+.syntax14 {
+color: #cc00cc;
+}
+.syntax15 {
+color: #9900cc;
+}
+.syntax16 {
+color: #6600cc;
+}
+.syntax17 {
+color: #0000ff;
+}
+.syntax18 {
+color: #000000;
+font-weight: bold;
+}
+.gutter {
+background: #dbdbdb;
+color: #000000;
+}
+.gutterH {
+background: #dbdbdb;
+color: #990066;
+}
+-->
+  </style>
+</head>
+
+
+<body>
+
+
+
+
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0" cellspacing="0">
+
+
+
+
+  <tbody>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>
+      
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+
+        <tbody>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="width: 200px; background-color: rgb(51, 51, 255);"><img style="width: 200px; height: 85px;" alt="Expression4j" src="../image/expression4j.PNG" /></td>
+
+
+
+
+            <td style="text-align: center; background-color: rgb(51, 51, 255);"><big style="font-style: italic; color: rgb(255, 255, 255);"><big><big><big><big>Expression4J</big></big></big></big></big></td>
+
+
+
+
+          </tr>
+
+
+
+
+        
+        
+        
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td>
+      
+      
+      
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="0">
+
+
+
+
+        <tbody>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="background-color: rgb(204, 204, 204); width: 150px;"></td>
+
+
+
+
+            <td style="vertical-align: top; height: 44px; font-style: italic; background-color: rgb(204, 204, 204); width: 677px;">
+            
+            
+            
+            <h2>Sample &gt; Simple expression</h2>
+
+
+
+
+            </td>
+
+
+
+
+          </tr>
+
+
+
+
+          <tr>
+
+
+
+
+            <td style="vertical-align: top; height: 339px; background-color: rgb(204, 204, 204); width: 150px;"><a href="../index.html">About</a><br />
+
+
+
+
+            <a href="../document.html">Documentation</a><br />
+
+
+
+
+Sample<br />
+
+
+
+
+&nbsp; &nbsp; Simple expression<br />
+
+
+
+
+&nbsp; &nbsp; <a href="agregated.html">Agregated
+expression</a><br />
+
+
+
+
+&nbsp; &nbsp; <a href="predefined.html">Predefined
+function</a><br />
+
+
+
+
+&nbsp; &nbsp; <a href="userdefine.html">User
+define function</a><br />
+&nbsp; &nbsp; <a href="customElement.html">Custom element</a><br />
+
+
+
+
+            <a href="http://sourceforge.net/project/showfiles.php?group_id=156661">Download</a></td>
+
+
+
+
+            <td style="vertical-align: top; height: 339px; width: 677px;">
+            
+            
+            
+            <h3>Create an expression</h3>
+
+
+
+
+An expression is constitued by :<br />
+
+
+
+
+            
+            
+            
+            <ul>
+
+
+
+
+              <li>&nbsp;function name (like <span style="font-weight: bold;">f</span> or <span style="font-weight: bold;">foo</span> or <span style="font-weight: bold;">function</span>)</li>
+
+
+
+
+              <li>parameters (like <span style="font-weight: bold;">x</span> or <span style="font-weight: bold;">y</span> or <span style="font-weight: bold;">foo</span>)</li>
+
+
+
+
+              <li>equal sign (=)</li>
+
+
+
+
+              <li>the body of the expression (like <span style="font-weight: bold;">2+3*x</span> or <span style="font-weight: bold;">3.5e-2+4</span>)</li>
+
+
+
+
+            
+            
+            
+            </ul>
+
+
+
+
+Expression does not support space. If spaces are present in the
+expression, the parsin will generate an error.<br />
+
+
+
+
+            <br />
+
+
+
+
+            
+            
+            
+            <h3>My first expression with <span style="font-style: italic; color: rgb(51, 51, 255);">expression4j</span></h3>
+
+
+
+
+The next example create a simple expression with no parameter
+            
+            
+            
+            <pre><span class="gutter"></span><span class="syntax18"></span><br /><span class="gutter"> 2:</span> <span class="syntax8">try</span> <span class="syntax18">{ </span><br /><span class="gutter"> 3:</span> Expression expression <span class="syntax18">=</span> ExpressionFactory.<span class="syntax6">createExpression</span>(<span class="syntax13">"</span><span class="syntax13">f()=2.4e-2</span><span class="syntax13">"</span>);<br /><span class="gutter"> 4:</span> System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Expression</span><span class="syntax13"> </span><span class="syntax13">name:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> expression.<span class="syntax6">getName</span>());<br /><span class="gutterH"> 5:</span> System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Value</span><span class="syntax13"> </span><span class="syntax13">of</span><span class="syntax13"> </span><span class="syntax13">expression:</span><span class="syntax13">"</span> <span class="syntax18">+</span> expression.<span class="syntax6">evaluate</span>(<span class="syntax14">null</span>)<br />.<span class="syntax6">getRealValue</span>())<br /><span class="gutter"> 6:</span> <span class="syntax18">}</span><br /><span class="gutter"> 7:</span> <span class="syntax8">catch</span> (Exception e) <span class="syntax18">{</span><br /><span class="gutter"> 8:</span> System.out.<span class="syntax6">println</span>(<span class="syntax13">"</span><span class="syntax13">Error:</span><span class="syntax13"> </span><span class="syntax13">"</span> <span class="syntax18">+</span> e);<br /><span class="gutter"> 9:</span> <span class="syntax18">}</span><span class="gutterH"></span><span class="syntax18"></span><span class="gutter"></span><br /></pre>
+
+
+
+
+            <br />
+
+
+
+
+Line 3 define the expression "f". This expression has no parameter and
+is equal to the constant 2.4e-2.<br />
+
+
+
+
+Line 4 display the name of the expression after the parsing. This line
+must display the result:<br />
+
+
+
+
+            
+            
+            
+            <div style="margin-left: 80px;"> Expression
+name: f<br />
+
+
+
+
+            </div>
+
+
+
+
+            <br />
+
+
+
+
+Line 5 evaluate the expression and display the r&eacute;sult. The
+result must be:<br />
+
+
+
+
+            
+            
+            
+            <div style="margin-left: 80px;">Value of
+expression:0.024</div>
+
+
+
+
+            
+            
+            
+            <div style="margin-left: 80px;"> </div>
+
+
+
+
+            </td>
+
+
+
+
+          </tr>
+
+
+
+
+        
+        
+        
+        </tbody>
+      
+      
+      
+      </table>
+
+
+
+
+      </td>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+
+
+
+
+      <td style="text-align: center;"><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=156661&amp;type=4" alt="SourceForge.net Logo" border="0" height="37" width="125" /></a> <a href="http://sourceforge.net/donate/index.php?group_id=156661"><img src="http://images.sourceforge.net/images/project-support.jpg" alt="Support This Project" border="0" height="32" width="88" /> </a> </td>
+
+
+
+
+    </tr>
+
+
+
+
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+<br />
+
+
+
+
+</body>
+</html>

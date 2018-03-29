@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="fr.expression4j.test.ImplementationTest" tests="14" time="0.108">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition"></property>
+    <property name="sun.boot.library.path" value="/home/sginer/tools/jdk1.5.0_07/jre/lib/i386"></property>
+    <property name="java.vm.version" value="1.5.0_07-b03"></property>
+    <property name="ant.library.dir" value="/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib"></property>
+    <property name="test.home" value="/home/sginer/workspace/expression4j/image/test"></property>
+    <property name="image" value="/home/sginer/workspace/expression4j/image"></property>
+    <property name="extlib" value="/home/sginer/workspace/expression4j/extLib"></property>
+    <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005"></property>
+    <property name="ant.java.version" value="1.5"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="path.separator" value=":"></property>
+    <property name="doc" value="/home/sginer/workspace/expression4j/image/doc"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="user.country" value="FR"></property>
+    <property name="sun.os.patch.level" value="unknown"></property>
+    <property name="ant.file.null" value="/home/sginer/workspace/expression4j/build/build.xml"></property>
+    <property name="test" value="/home/sginer/workspace/expression4j/image/test"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="user.dir" value="/home/sginer/workspace/expression4j"></property>
+    <property name="lib" value="/home/sginer/workspace/expression4j/image/lib"></property>
+    <property name="java.runtime.version" value="1.5.0_07-b03"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"></property>
+    <property name="basedir" value="/home/sginer/workspace/expression4j/build"></property>
+    <property name="java.endorsed.dirs" value="/home/sginer/tools/jdk1.5.0_07/jre/lib/endorsed"></property>
+    <property name="os.arch" value="i386"></property>
+    <property name="sample" value="/home/sginer/workspace/expression4j/image/sample"></property>
+    <property name="java.io.tmpdir" value="/tmp"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="os.name" value="Linux"></property>
+    <property name="home.src" value="/home/sginer/workspace/expression4j/src"></property>
+    <property name="ant.home" value="/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5"></property>
+    <property name="ant.project.name" value="Expression4J"></property>
+    <property name="sun.jnu.encoding" value="UTF-8"></property>
+    <property name="java.library.path" value="/home/sginer/tools/jdk1.5.0_07/jre/lib/i386/client:/home/sginer/tools/jdk1.5.0_07/jre/lib/i386:/home/sginer/tools/jdk1.5.0_07/jre/../lib/i386:/home/sginer/tools/eclipse/configuration/org.eclipse.osgi/bundles/293/1/.cp"></property>
+    <property name="src" value="/home/sginer/workspace/expression4j/image/src"></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="java.class.version" value="49.0"></property>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+    <property name="os.version" value="2.6.15-26-386"></property>
+    <property name="ant.file" value="/home/sginer/workspace/expression4j/test/build.xml"></property>
+    <property name="user.home" value="/home/sginer"></property>
+    <property name="expression4j.test.home" value="/home/sginer/workspace/expression4j/image/test"></property>
+    <property name="user.timezone" value=""></property>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"></property>
+    <property name="java.specification.version" value="1.5"></property>
+    <property name="file.encoding" value="UTF-8"></property>
+    <property name="user.name" value="sginer"></property>
+    <property name="java.class.path" value="/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-antlr.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-bcel.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-bsf.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-log4j.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-oro.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-regexp.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-apache-resolver.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-commons-logging.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-commons-net.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-icontract.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-jai.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-javamail.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-jdepend.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-jmf.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-jsch.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-junit.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-launcher.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-netrexx.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-nodeps.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-starteam.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-stylebook.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-swing.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-trax.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-vaj.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-weblogic.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-xalan1.jar:/home/sginer/tools/eclipse/plugins/org.apache.ant_1.6.5/lib/ant-xslp.jar:/home/sginer/tools/eclipse/configuration/org.eclipse.osgi/bundles/245/1/.cp/lib/remoteAnt.jar:/home/sginer/tools/jdk1.5.0_07/lib/tools.jar:/home/sginer/tools/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_3.1.1.jar:/home/sginer/workspace/expression4j/extLib/expression4jCFG.jar:/home/sginer/tools/java/junit/junit4.1/junit-4.1.jar:/home/sginer/tools/java/xmlBeans/xmlbeans-2.2.0/lib/jsr173_1.0_api.jar:/home/sginer/tools/java/xmlBeans/xmlbeans-2.2.0/lib/xbean.jar:/home/sginer/tools/java/log4j/logging-log4j-1.2.13/dist/lib/log4j-1.2.13.jar"></property>
+    <property name="expression4j.home" value="/home/sginer/workspace/expression4j"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="java.home" value="/home/sginer/tools/jdk1.5.0_07/jre"></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="user.language" value="fr"></property>
+    <property name="build" value="/home/sginer/workspace/expression4j/image/build"></property>
+    <property name="java.vm.info" value="mixed mode, sharing"></property>
+    <property name="java.version" value="1.5.0_07"></property>
+    <property name="java.ext.dirs" value="/home/sginer/tools/jdk1.5.0_07/jre/lib/ext"></property>
+    <property name="ant.file.Expression4J" value="/home/sginer/workspace/expression4j/test/build.xml"></property>
+    <property name="sun.boot.class.path" value="/home/sginer/tools/jdk1.5.0_07/jre/lib/rt.jar:/home/sginer/tools/jdk1.5.0_07/jre/lib/i18n.jar:/home/sginer/tools/jdk1.5.0_07/jre/lib/sunrsasign.jar:/home/sginer/tools/jdk1.5.0_07/jre/lib/jsse.jar:/home/sginer/tools/jdk1.5.0_07/jre/lib/jce.jar:/home/sginer/tools/jdk1.5.0_07/jre/lib/charsets.jar:/home/sginer/tools/jdk1.5.0_07/jre/classes"></property>
+    <property name="tmp" value="/home/sginer/workspace/expression4j/image/tmp"></property>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="file.separator" value="/"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="sun.cpu.isalist" value=""></property>
+  </properties>
+  <testcase classname="fr.expression4j.test.implementation.TestCatalog" name="testEmptyCatalog" time="0.033"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestCatalog" name="testGeneralCatalog" time="0.036"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestCatalog" name="testGeneralCatalog2" time="0.0060"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestCatalog" name="testCatalog" time="0.017"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testEmptyParameters" time="0.0020"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testParameters" time="0.0"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testParameters2" time="0.0010"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testParameters3" time="0.0"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testParametersIntoAnother" time="0.0"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestParameters" name="testParametersIntoAnother2" time="0.0"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestRealImpl" name="testRealImpl" time="0.0010"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestRealImpl" name="testRealImplProperties" time="0.0"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestComplexImpl" name="testComplexImpl" time="0.0030"></testcase>
+  <testcase classname="fr.expression4j.test.implementation.TestComplexImpl" name="testComplexImplProperties" time="0.0010"></testcase>
+  <system-out><![CDATA[1788 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+1788 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Initialize factory
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Factory initialised
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1813 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1827 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1827 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1829 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1841 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1849 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1850 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1850 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1850 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1851 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1851 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1852 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1852 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1853 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1853 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1854 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1854 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: f()=1+2
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1856 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1856 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 4
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1857 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1871 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1871 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Divide not found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 5
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Plus found.
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1872 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Plus
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1872 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 6
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create catalog: Catalog
+1872 [main] WARN fr.expression4j.factory.ExpressionFactory  - Catalog Catalog already exist.
+1872 [main] WARN fr.expression4j.factory.ExpressionFactory  - Catalog Catalog already exist.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Create expression.
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression to create: g(x)=2*x
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Catalog: general
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1872 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Model: default
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 5
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Pow not found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - No operator found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In parseElement.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Current end position: 6
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - In checkOperator.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Operator Multiply found.
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1873 [main] DEBUG fr.expression4j.basic.impl.BinaryOperatorExpressionElement  - Found operator Multiply
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - In parseElement
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1873 [main] DEBUG fr.expression4j.basic.impl.ComplexOrRealExpressionElement  - start position: 7
+1873 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1873 [main] DEBUG fr.expression4j.factory.ExpressionFactory  - Expression created
+1878 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 230.0 complex: 240.0
+1878 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 230.0 complex: 240.0
+1880 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 0.0 complex: 0.0
+1880 [main] DEBUG fr.expression4j.basic.impl.ComplexImpl  - In constructor: real: 0.0 complex: 0.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
