@@ -54,7 +54,5 @@ public class TemplateModelFragment extends BaseFragment {
                 concreteClassTwo.templateMethod(getContext());
             }
         });
-
-
     }
 }
