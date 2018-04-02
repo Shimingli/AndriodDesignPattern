@@ -15,7 +15,7 @@ import com.shiming.andrioddesignpattern.utils.ToastUtil;
 /**
  * @author shiming
  * @version v1.0 create at 2017/9/22
- * @des Observer 观察者模式：发布和订阅模式 publish - subscribe 模式，属于行为型模式德一种，它定义了一种一对多的依赖关系
+ * @des Observer 观察者模式：发布和订阅模式 publish - subscribe 模式，属于行为型模式的一种，它定义了一种一对多的依赖关系
  * 让多个观察者对象同时监听某一个主题对象，这个主题对象在状态变化时候，会通知所有的观察对象，使他们能够自动更新自己
  * 使用的场景：关联行为场景，需要注意的是，关联行为是可拆分的，而不是组合关系
  * 事件多级触发的场景
@@ -29,6 +29,8 @@ import com.shiming.andrioddesignpattern.utils.ToastUtil;
  * 可以通过BaseAdapter的源码分析。当listview的数据发生了变化时候，我们调用adapter的notifyDataSetChanged（）
  * 的方法，这个方法又会调用观察者AdapterDataSetObserver的onchanged的方法，onchanged的方法
  * 又会调用requestLayout（）的方法来重新布局，这就是观察者很好的例子
+ *
+ * 注意事项： 1、JAVA 中已经有了对观察者模式的支持类。 2、避免循环引用。 3、如果顺序执行，某一观察者错误会导致系统卡壳，一般采用异步方式。
  *
  */
 public class ObserverModelFragment extends BaseFragment {
