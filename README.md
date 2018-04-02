@@ -17,3 +17,7 @@
 <img src="/imag/Template模板方法模式.png" width="5000px" heigh="5000px"/>     
 ## 观察者模式 Observer
 <img src="/imag/Observer观察者模式.png" width="5000px" heigh="5000px"/>     
+## 迭代子模式 Iterator
+<img src="/imag/Iterator迭代子模式.png" width="5000px" heigh="5000px"/>    
+## ChainOfResponsibility
+<img src="/imag/ChainOfResponsibility责任链模式.png" width="5000px" heigh="5000px"/>    
