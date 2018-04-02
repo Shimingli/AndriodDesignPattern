@@ -1,6 +1,6 @@
 # AndriodDesignPattern 安卓的23种设计模式
 ##Demo下载地址
-<img src="/imag/3fnH.png" width="5000px" heigh="5000px"/>    
+<img src="/imag/3fnH.png" width="300px" heigh="300px"/>    
 ## 状态模式
 <img src="/imag/statemodel.png" width="5000px" heigh="5000px"/>    
 ## 访问者模式
