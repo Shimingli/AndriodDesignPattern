@@ -8,7 +8,7 @@ package com.shiming.andrioddesignpattern.command_pattern_model;
 public interface Command {
     //执行
     String execute();
-
+    //不用做
     void undo();
     //重新的做
     void redo();

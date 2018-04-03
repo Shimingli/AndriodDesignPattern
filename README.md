@@ -21,3 +21,7 @@
 <img src="/imag/Iterator迭代子模式.png" width="5000px" heigh="5000px"/>    
 ## ChainOfResponsibility
 <img src="/imag/ChainOfResponsibility责任链模式.png" width="5000px" heigh="5000px"/>    
+## CommandPattern 命令模式
+<img src="/imag/CommandPattern命令模式.png" width="5000px" heigh="5000px"/>    
+## Memento 备忘录模式
+<img src="/imag/Memento备忘录模式.png" width="5000px" heigh="5000px"/>   

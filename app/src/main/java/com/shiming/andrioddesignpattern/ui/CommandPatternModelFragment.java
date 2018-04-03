@@ -30,9 +30,15 @@ import com.shiming.andrioddesignpattern.command_pattern_model.Receiver;
  * 2、命令模式允许请求的一方和接受的一方独立开来，使得请求的一方不必知道接收请求一方的接口，更不知道请求是怎么样被接收的，以及操作是否被执行
  * 合适被执行，以及怎么样被执行
  * 3、命令模式是请求本身成为一个对象，这个对象和其他对象一样可以被储存和传递，只有实现了抽象命令接口的具体命令才能与接受者相关联
+ *  优点：比较容易的设计一个命令队列，在需要的情况下，可以比较轻易的把统计计入到命令中
  *
- *
- */
+ *  类间解耦：调用者角色与接收者角色之间没有任何依赖关系，调用者实现功能时只需调用Command 抽象类的execute方法就可以，不需要了解到底是哪个接收者执行。
+可扩展性：Command的子类可以非常容易地扩展，而调用者Invoker和高层次的模块Client不产生严 重的代码耦合。
+命令模式结合其他模式会更优秀：命令模式可以结合责任链模式，实现命令族解析任务；结合模板方法模式，则可以减少 Command子类的膨胀问题。
+ *   缺点：产生很多不必要的类，这样的
+ *   */
+
+
 public class CommandPatternModelFragment extends BaseFragment {
 
     private TextView mCommandDes;
