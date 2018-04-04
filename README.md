@@ -37,5 +37,18 @@
 <img src="/imag/Singleton单利模式.png" width="5000px" heigh="5000px"/>   
 ## 创建型模式end 
 ## 结构型模式start 共七种
+## Adapter 适配器模式
+<img src="/imag/Adapter适配器模式.png" width="5000px" heigh="5000px"/>   
+
+## Bridge 桥接模式
+<img src="/imag/Bridge桥接模式.png" width="5000px" heigh="5000px"/>   
+## Composite 组合模式
+<img src="/imag/Composite组合模式.png" width="5000px" heigh="5000px"/>   
+## Decorator装饰者模式
+<img src="/imag/Decorator装饰者模式.png" width="5000px" heigh="5000px"/>   
+## Facade外观模式
+<img src="/imag/Facade外观模式.png" width="5000px" heigh="5000px"/>   
+## Proxy代理模式
+<img src="/imag/Proxy代理模式.png" width="5000px" heigh="5000px"/>   
 
 ## 结构型模式end

@@ -24,12 +24,23 @@ import com.shiming.andrioddesignpattern.composite_model.Leaf;
  * 计算机系统就是递归结构来组织，如果想要这样的数据结构，就可以使用组合模式
  *  组合模式：将对象组合成树形结构以表示“整体部分”的层次结构，组合模式使得用户对单个对象和使用具有一致性
  *  参考：http://blog.csdn.net/qq_25806863/article/details/69568341
+ *
+ *
+ *
  *  view viewgroup 是一种标准的组合模式：在安卓视图中，容器一定是ViewGroup 只有ViewGroup
  *  才能包含其他的view和viewGroup 这是一种安全的模式 ，开发过程中用到的组合模式并不多，
  *  组合模式更多的用于界面ui架构的设计上，而这部分代码通常让开发者去实现的并不多
  *
  *
+ *  组合模式解耦了客户程序与复杂元素内部结构，从而使客户程序可以像处理简单元素一样来处理复杂元素。
  *
+ *  以下情况下适用Composite模式：
+ 1．你想表示对象的部分-整体层次结构
+ 2．你希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。
+
+ 想表示对象的部分-整体层次结构时。
+ 希望用户忽略单个对象和组合对象的不同，对对象使用具有统一性时。
+ 从一个整体中能够独立出部分模块或功能时。
  */
 
 public class CompositeModelFragment extends BaseFragment {

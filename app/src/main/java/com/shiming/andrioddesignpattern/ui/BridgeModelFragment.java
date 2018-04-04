@@ -14,6 +14,7 @@ import com.shiming.andrioddesignpattern.bridge_model.WhiteColor;
 /**
  * Created by shiming on 2017/9/18.
  * 桥接模式： 分离抽象接口及其实现的部分，提高比继承更好的解决方法
+ * 优点：
  * 桥接模式提高了系统的可扩充性，在两个变化的维度中任意扩张一个维度，都不需要修改原来的维度
  * 缺点：
  * 桥接模式会增加系统的理解与设计难度，由于聚合关联关系建立在抽象层，要求开发者针对

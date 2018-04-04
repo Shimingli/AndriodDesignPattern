@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.shiming.andrioddesignpattern.R;
+import com.shiming.andrioddesignpattern.facade_model.Facade;
 
 /**
  * Created by shiming on 2017/9/17.
@@ -21,6 +22,11 @@ import com.shiming.andrioddesignpattern.R;
  * 外观类接口膨胀，由于子系统的接口都由外观类统一对外暴露，是的外观类上的api接口过多
  * 增加了用户的使用成本
  * 当业务逻辑变更的时候，可能需要直接修改外观类
+  使用的场景
+  在以下情况下可以考虑使用外观模式：
+ (1)设计初期阶段，应该有意识的将不同层分离，层与层之间建立外观模式。
+ (2) 开发阶段，子系统越来越复杂，增加外观模式提供一个简单的调用接口。
+ (3) 维护一个大型遗留系统的时候，可能这个系统已经非常难以维护和扩展，但又包含非常重要的功能，为其开发一个外观类，以便新系统与其交互。
  *
  */
 
@@ -33,6 +39,13 @@ public class FacadeModelFragment extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+//        04-04 09:21:50.503 5305-5305/com.shiming.andrioddesignpattern D/PhoneImpl: dail
+//        04-04 09:21:50.503 5305-5305/com.shiming.andrioddesignpattern D/HandImpl: takePhone
+//        04-04 09:21:50.503 5305-5305/com.shiming.andrioddesignpattern D/PhoneImpl: hangUp
+//        04-04 09:21:50.503 5305-5305/com.shiming.andrioddesignpattern D/HandImpl: closePhone
+        Facade facade = new Facade();
+        facade.doFirst();
+        facade.close();
 
     }
 }

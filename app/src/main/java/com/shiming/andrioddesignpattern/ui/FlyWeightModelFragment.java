@@ -23,6 +23,10 @@ import com.shiming.andrioddesignpattern.flyweight_model.TicketFactory;
  * 为了使对象可以共享，需要将一些状态外部化，这使得一些程序逻辑更加的复杂
  * 享元模式将享元对象的状态外部化，而读取外部状态使得运行的时间稍微变长
  *
+ *
+ * 我们12306的购票的系统，如果每个人买张车票都需要在后台给它new个车票的实体类的话，
+ 全中国的人民那么都去买，是不是服务器必然挂掉，每次查询一个火车票的结果，那么必然会真加大量的创建的对象，销毁，使得
+ GC任务繁重，那么这时候就需要使用享元模式了
  */
 
 public class FlyWeightModelFragment extends BaseFragment {
