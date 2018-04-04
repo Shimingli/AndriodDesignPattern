@@ -2,7 +2,7 @@
 ## Demo下载地址
 
 <img src="/imag/3fnH.png" width="200px" heigh="200px"/>    
-
+## 行为型模式start 共十一种
 ## 状态模式
 <img src="/imag/statemodel.png" width="5000px" heigh="5000px"/>    
 ## 访问者模式
@@ -24,7 +24,9 @@
 ## CommandPattern 命令模式
 <img src="/imag/CommandPattern命令模式.png" width="5000px" heigh="5000px"/>    
 ## Memento 备忘录模式
-<img src="/imag/Memento备忘录模式.png" width="5000px" heigh="5000px"/>   
+<img src="/imag/Memento备忘录模式.png" width="5000px" heigh="5000px"/>  
+## 行为型模式end
+## 创建型模式start 共五种，我把抽象工厂和工厂模式合在一起了
 ## BuildPattern 建造者模式
 <img src="/imag/BuildPattern建造者模式.png" width="5000px" heigh="5000px"/>   
 ## Factory 工厂模式
@@ -33,3 +35,7 @@
 <img src="/imag/Prototype原型模式.png" width="5000px" heigh="5000px"/>   
 ## Singleton 单例模式
 <img src="/imag/Singleton单利模式.png" width="5000px" heigh="5000px"/>   
+## 创建型模式end 
+## 结构型模式start 共七种
+
+## 结构型模式end
