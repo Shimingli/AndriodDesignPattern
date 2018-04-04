@@ -5,10 +5,14 @@ package com.shiming.andrioddesignpattern.prototype_model;
  * 原型模式实现的第二种的方法
  */
 
-public class ProtoTypeExtend  {
+/**
+ * java.lang.CloneNotSupportedException: Class doesn't implement Cloneable
+ */
+public class ProtoTypeExtend  implements  Cloneable{
     @Override
     public ProtoTypeExtend clone()  {
         try {
+            System.out.println("shiming clone");
             return (ProtoTypeExtend) super.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();

@@ -14,7 +14,7 @@ import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeExtend;
 
 /**
  * Created by shiming on 2017/9/12.
- * protoType :原型
+ * protoType :原型 用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象
  * 原型模式：包括三个角色
  * 1、客户：client 使用原型对象的客户程序
  * 2、抽象原型：ProtoType 规定了具体原型对象必须实现的接口
@@ -30,6 +30,11 @@ import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeExtend;
  * 冲突的，使用这个模式的时候，需要特别的注意
  * Bundle类，该类实现了Cloneable接口  Intent类，该类也实现了Cloneable接口
  * OkHttpClient这个类中，它实现了Cloneable接口（okhttp）
+ *
+ * 优点： 1、性能提高。 2、逃避构造函数的约束。
+ 缺点：
+ 1、配备克隆方法需要对类的功能进行通盘考虑，这对于全新的类不是很难，但对于已有的类不一定很容易，特别当一个类引用不支持串行化的间接对象，或者引用含有循环结构的时候。
+ 2、必须实现 Cloneable 接口。
  *
  */
 
@@ -62,6 +67,7 @@ public class ProtoTypeModelFragment extends BaseFragment {
             stringBuffer1.append(clone1+"我是第"+i+"个克隆出来的"+"\n");
 
         }
+        stringBuffer1.append("java.lang.CloneNotSupportedException: Class doesn't implement Cloneable 必须实Cloneable接口");
         textView1.setText("第二种的实现的方式:经过测试无用"+clone+"\n"+"stringBuffer=="+stringBuffer1);
     }
 }

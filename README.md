@@ -25,3 +25,11 @@
 <img src="/imag/CommandPattern命令模式.png" width="5000px" heigh="5000px"/>    
 ## Memento 备忘录模式
 <img src="/imag/Memento备忘录模式.png" width="5000px" heigh="5000px"/>   
+## BuildPattern 建造者模式
+<img src="/imag/BuildPattern建造者模式.png" width="5000px" heigh="5000px"/>   
+## Factory 工厂模式
+<img src="/imag/Factory工厂模式.png" width="5000px" heigh="5000px"/>   
+## Prototype 原型模式
+<img src="/imag/Prototype原型模式.png" width="5000px" heigh="5000px"/>   
+## Singleton 单例模式
+<img src="/imag/Singleton单利模式.png" width="5000px" heigh="5000px"/>   

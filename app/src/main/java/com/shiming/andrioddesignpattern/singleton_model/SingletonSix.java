@@ -10,6 +10,8 @@ import java.io.Serializable;
  * 2、枚举单利可以自己处理序列化：传统的单利模式的另外一个问题是你实现了Serializable这个接口了
  * 他们就不是单利了，因为readObject（）方法总是返回一个新的实例对象，就像java中的构造器一样
  * 3.枚举单利线程是安全的，因为枚举的线程是安全的
+ * 4.很不仅能避免多线程同步问题，而且还能防止反序列化重新创建新的对象。
+ * 5.但是失去了类的一些特性，没有延迟加载
  */
 
 public enum  SingletonSix implements Serializable{
