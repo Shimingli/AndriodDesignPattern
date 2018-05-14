@@ -11,7 +11,7 @@ import android.support.v4.view.ViewPager;
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shiming.andrioddesignpattern.ui.BuilderModelFragment;
 import com.shiming.andrioddesignpattern.ui.FactoryMethodModelFragment;
-import com.shiming.andrioddesignpattern.ui.ProtoTypeModelFragment;
+import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeModelFragment;
 import com.shiming.andrioddesignpattern.ui.SingletonModelFragment;
 
 import java.util.ArrayList;

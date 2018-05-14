@@ -1,4 +1,4 @@
-package com.shiming.andrioddesignpattern.ui;
+package com.shiming.andrioddesignpattern.prototype_model;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,7 @@ import com.shiming.andrioddesignpattern.R;
 import com.shiming.andrioddesignpattern.prototype_model.ConcreteProtoType;
 import com.shiming.andrioddesignpattern.prototype_model.ProtoType;
 import com.shiming.andrioddesignpattern.prototype_model.ProtoTypeExtend;
+import com.shiming.andrioddesignpattern.ui.BaseFragment;
 
 /**
  * Created by shiming on 2017/9/12.

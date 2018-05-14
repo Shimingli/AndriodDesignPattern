@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.shiming.andrioddesignpattern.singleton_model.volatile_demo.VolatileUtils;
+
 /**
 创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
  结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
@@ -44,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,BehaviorModelActivity.class));
             }
         });
+
+        /*
+        volatile 关键字的Demo
+         */
+        VolatileUtils.doFrist();
+
     }
    //备忘录模式
     @Override
