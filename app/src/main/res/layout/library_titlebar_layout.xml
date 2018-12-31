@@ -5,7 +5,7 @@
         android:id="@+id/lib_titlebar_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/zhenai_tab_container_title"
+        android:background="@color/shiming_tab_container_title"
         android:gravity="center_vertical"
         android:visibility="visible">
 
@@ -17,7 +17,7 @@
 
 
                 <ImageView
-                    android:id="@+id/zhenai_lib_titlebar_right_red_dot"
+                    android:id="@+id/shiming_lib_titlebar_right_red_dot"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginRight="8dp"

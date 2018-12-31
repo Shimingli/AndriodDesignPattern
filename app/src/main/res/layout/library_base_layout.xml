@@ -13,6 +13,6 @@
         android:id="@+id/lib_container_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/zhenai_library_container_bg"/>
+        android:background="@color/shiming_library_container_bg"/>
 
 </LinearLayout>

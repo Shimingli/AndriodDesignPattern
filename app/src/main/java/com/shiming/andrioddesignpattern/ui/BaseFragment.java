@@ -16,6 +16,8 @@ import com.shiming.andrioddesignpattern.R;
 
 /**
  * Created by shiming on 2015/9/29.
+ *
+ *  你来打我啊
  */
 public abstract class BaseFragment extends Fragment {
     private View titleBarLayout;
@@ -119,9 +121,9 @@ public abstract class BaseFragment extends Fragment {
 
     protected void showRedDot(boolean isShow) {
         if (isShow) {
-            titleBarLayout.findViewById(R.id.zhenai_lib_titlebar_right_red_dot).setVisibility(View.VISIBLE);
+            titleBarLayout.findViewById(R.id.shiming_lib_titlebar_right_red_dot).setVisibility(View.VISIBLE);
         } else {
-            titleBarLayout.findViewById(R.id.zhenai_lib_titlebar_right_red_dot).setVisibility(View.GONE);
+            titleBarLayout.findViewById(R.id.shiming_lib_titlebar_right_red_dot).setVisibility(View.GONE);
         }
     }
 
