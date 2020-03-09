@@ -20,6 +20,8 @@ import com.shiming.andrioddesignpattern.singleton_model.volatile_demo.VolatileUt
  从来不去认真考虑所使用的模式是否适合这种场景，而往往只是想展示一下自己对面向对象设计的驾驭能力。编程时有这种心理，
  往往会发生滥用设计模式的情况。所以，在学习设计模式时，一定要理解模式的适用性。必须做到使用一种模式是因为了解它的优点，
  不使用一种模式是因为了解它的弊端；而不是使用一种模式是因为不了解它的弊端，不使用一种模式是因为不了解它的优点。
+
+ ps: 2020年3月9日 17：09提交这个设计代码   come on  加油加油
  */
 public class MainActivity extends AppCompatActivity {
 

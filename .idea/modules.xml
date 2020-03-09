@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AndriodDesignPattern.iml" filepath="$PROJECT_DIR$/.idea/AndriodDesignPattern.iml" />
-      <module fileurl="file://E:\git_hub\AndriodDesignPattern\AndriodDesignPattern.iml" filepath="E:\git_hub\AndriodDesignPattern\AndriodDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AndriodDesignPattern-app.iml" filepath="$PROJECT_DIR$/app/AndriodDesignPattern-app.iml" group="AndriodDesignPattern/app" />
+      <module fileurl="file://$PROJECT_DIR$/StudioProjects-AndriodDesignPattern.iml" filepath="$PROJECT_DIR$/StudioProjects-AndriodDesignPattern.iml" group="AndriodDesignPattern" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
