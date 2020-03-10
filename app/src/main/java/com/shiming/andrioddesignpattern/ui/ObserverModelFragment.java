@@ -32,6 +32,7 @@ import com.shiming.andrioddesignpattern.utils.ToastUtil;
  *
  * 注意事项： 1、JAVA 中已经有了对观察者模式的支持类。 2、避免循环引用。 3、如果顺序执行，某一观察者错误会导致系统卡壳，一般采用异步方式。
  *
+ *
  */
 public class ObserverModelFragment extends BaseFragment {
     @Override

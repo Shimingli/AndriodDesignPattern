@@ -25,9 +25,14 @@ import java.util.ArrayList;
  * @des 结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
  */
 public class StructuralModelActivity extends FragmentActivity {
+
+
     private ArrayList<Fragment> mFragments = new ArrayList<>();
+
     private String[] mTitles;
+
     private MyPagerAdapter mAdapter;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

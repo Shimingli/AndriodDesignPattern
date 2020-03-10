@@ -21,11 +21,13 @@ import java.util.ArrayList;
  * @version v1.0 create at 2017/9/14
  * @des  创建者模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
  * 这里我把工厂和抽象工厂合并在一起的
- *
  */
 public class CreatorModelActivity extends FragmentActivity {
+
     private ArrayList<Fragment> mFragments = new ArrayList<>();
+
     private String[] mTitles;
+
     private MyPagerAdapter mAdapter;
 
     @Override
@@ -35,13 +37,13 @@ public class CreatorModelActivity extends FragmentActivity {
 
         ViewPager pager= (ViewPager) findViewById(R.id.viewpager);
         SlidingTabLayout tab= (SlidingTabLayout) findViewById(R.id.tap);
+
         mTitles = new String[]{
                 this.getResources().getString(R.string.all_order_tab1),
                 this.getResources().getString(R.string.all_order_tab2),
                 this.getResources().getString(R.string.all_order_tab3),
                 this.getResources().getString(R.string.all_order_tab4),
                 };
-
         mFragments.add(new FactoryMethodModelFragment());
         mFragments.add(new SingletonModelFragment());
         mFragments.add(new BuilderModelFragment());
