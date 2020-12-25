@@ -63,10 +63,12 @@ public class ChainOfResponsibilityFragment extends BaseFragment {
         GeneralManager generalManager = new GeneralManager();
         //项目经理
         ProjectManager projectManager = new ProjectManager();
+
         //这两个是有顺序的哦
 //        departmentManager.setLastHandler(generalManager);
 //        generalManager.setLastHandler(projectManager);
         //处理不了就给大的处理，有个以此到大的顺序
+
         projectManager.setLastHandler(departmentManager);
         departmentManager.setLastHandler(generalManager);
 
