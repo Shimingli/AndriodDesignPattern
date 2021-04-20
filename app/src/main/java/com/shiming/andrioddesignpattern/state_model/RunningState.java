@@ -13,7 +13,7 @@ public class RunningState extends LiftState {
 
     @Override
     public void close() {
-      //不能光
+        //不能光
     }
 
     @Override
@@ -23,7 +23,7 @@ public class RunningState extends LiftState {
 
     @Override
     public void stop() {
-       super.mNewContext.setLiftState(NewContext.StoppinggState);
+        super.mNewContext.setLiftState(NewContext.StoppinggState);
         mNewContext.getLiftState().stop();
     }
 }

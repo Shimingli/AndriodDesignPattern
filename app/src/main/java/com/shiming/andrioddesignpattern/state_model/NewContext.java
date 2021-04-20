@@ -7,10 +7,10 @@ package com.shiming.andrioddesignpattern.state_model;
 //
 public class NewContext {
     //定义出所有的状态
-    public final static OpenningState OpenningState=new OpenningState();
-    public final static ClosingState ClosingState=new ClosingState();
-    public final static RunningState RunningState=new RunningState();
-    public final static StoppinggState StoppinggState=new StoppinggState();
+    public final static OpenningState OpenningState = new OpenningState();
+    public final static ClosingState ClosingState = new ClosingState();
+    public final static RunningState RunningState = new RunningState();
+    public final static StoppinggState StoppinggState = new StoppinggState();
 
     private LiftState mLiftState;
 
@@ -23,16 +23,20 @@ public class NewContext {
         //把当前的环境通知到各个实现类中
         liftState.setNewContext(this);
     }
-    public void open(){
+
+    public void open() {
         this.mLiftState.open();
     }
-    public void close(){
+
+    public void close() {
         this.mLiftState.close();
     }
-    public void run(){
+
+    public void run() {
         this.mLiftState.run();
     }
-    public void stop(){
+
+    public void stop() {
         this.mLiftState.stop();
     }
 }

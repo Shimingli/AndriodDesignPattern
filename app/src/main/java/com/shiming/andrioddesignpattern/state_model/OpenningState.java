@@ -19,11 +19,11 @@ public class OpenningState extends LiftState {
 
     @Override
     public void run() {
-       //开着门，就想跑是不行的
+        //开着门，就想跑是不行的
     }
 
     @Override
     public void stop() {
-      //已经停止了的哦
+        //已经停止了的哦
     }
 }
