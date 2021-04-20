@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.shiming.andrioddesignpattern.R;
+import com.shiming.andrioddesignpattern.observer_model.BluetoothStateObserver;
 import com.shiming.andrioddesignpattern.observer_model.ConcreteObserver;
 import com.shiming.andrioddesignpattern.observer_model.ConcreteSubject;
 import com.shiming.andrioddesignpattern.utils.ToastUtil;
@@ -34,7 +35,7 @@ import com.shiming.andrioddesignpattern.utils.ToastUtil;
  *
  *
  */
-public class ObserverModelFragment extends BaseFragment {
+public class ObserverModelFragment extends BaseFragment implements BluetoothStateObserver.OnBlufiNotifyListener {
     @Override
     public View createView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.observer_model_fragment_layout,null,false);
@@ -43,10 +44,40 @@ public class ObserverModelFragment extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        BluetoothStateObserver.getInstance().registerObserver(this);
+
+        BluetoothStateObserver.getInstance().registerObserver(new BluetoothStateObserver.OnBlufiNotifyListener(){
+            @Override
+            public void onBlufiNotify(int packageType, int subType) {
+                BluetoothStateObserver.getInstance().removeObserver(this);
+                System.out.println(" shiming 11111 ");
+            }
+
+            @Override
+            public void onBlufiNotifyError(int errorCode, byte[] responseData) {
+
+            }
+        });
+
+
+        BluetoothStateObserver.getInstance().registerObserver(new BluetoothStateObserver.OnBlufiNotifyListener(){
+            @Override
+            public void onBlufiNotify(int packageType, int subType) {
+                BluetoothStateObserver.getInstance().removeObserver(this);
+                System.out.println(" shiming 222222 ");
+            }
+
+            @Override
+            public void onBlufiNotifyError(int errorCode, byte[] responseData) {
+
+            }
+        });
+
         final ConcreteObserver a = new ConcreteObserver("A");
         final ConcreteObserver b = new ConcreteObserver("B");
         final ConcreteObserver c = new ConcreteObserver("C");
         final ConcreteObserver d = new ConcreteObserver("D");
+
 
 
         final ConcreteSubject concreteSubject = new ConcreteSubject();
@@ -55,10 +86,14 @@ public class ObserverModelFragment extends BaseFragment {
         concreteSubject.attach(c);
         concreteSubject.attach(d);
 
+
         Button click = (Button) getView().findViewById(R.id.btn_click);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                BluetoothStateObserver.getInstance().notifyBlufiNotificationObserver();
+
                 concreteSubject.notifyMessage("我要取媳妇了哦");
                 String messagea = a.getMessage();
                 String messageb = b.getMessage();
@@ -66,9 +101,24 @@ public class ObserverModelFragment extends BaseFragment {
                 String messaged= d.getMessage();
                 ToastUtil.showShort(getContext(),messagea+messageb+messagec+messaged);
 
-
             }
         });
 
+    }
+
+    @Override
+    public void onBlufiNotify(int packageType, int subType) {
+        System.out.println("shiming 33333");
+    }
+
+    @Override
+    public void onBlufiNotifyError(int errorCode, byte[] responseData) {
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        BluetoothStateObserver.getInstance().removeObserver(this);
     }
 }

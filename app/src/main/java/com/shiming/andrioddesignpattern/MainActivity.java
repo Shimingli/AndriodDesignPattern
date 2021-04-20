@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.shiming.andrioddesignpattern.singleton_model.volatile_demo.VolatileUtils;
 
+import java.sql.SQLOutput;
+
 /**
 创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
  结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        System.out.println(" shiming onCreate  ");
         findViewById(R.id.btn_creator_model).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         /*
         volatile 关键字的Demo
          */
-        VolatileUtils.doFrist();
+      //  VolatileUtils.doFrist();
 
     }
    //备忘录模式
