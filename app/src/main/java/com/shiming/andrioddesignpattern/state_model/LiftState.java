@@ -6,6 +6,7 @@ package com.shiming.andrioddesignpattern.state_model;
  */
 //基类 所有的基类
 public abstract class LiftState {
+
     protected NewContext mNewContext;
 
     public void setNewContext(NewContext newContext) {

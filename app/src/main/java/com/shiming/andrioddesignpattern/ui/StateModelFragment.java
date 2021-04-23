@@ -7,9 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.shiming.andrioddesignpattern.R;
-import com.shiming.andrioddesignpattern.state_model.ClosingState;
 import com.shiming.andrioddesignpattern.state_model.NewContext;
-import com.shiming.andrioddesignpattern.state_model.RunningState;
 
 /**
  * Created by shiming on 2017/10/15.
@@ -29,6 +27,7 @@ public class StateModelFragment extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
         NewContext context = new NewContext();
 
         context.setLiftState(NewContext.ClosingState);
