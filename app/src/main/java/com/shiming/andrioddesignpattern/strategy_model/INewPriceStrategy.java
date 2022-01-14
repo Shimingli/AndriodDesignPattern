@@ -5,6 +5,6 @@ package com.shiming.andrioddesignpattern.strategy_model;
  * mailbox：lamshiming@sina.com
  */
 // 新的 策略的接口
-public interface  INewPriceStrategy  {
+public interface INewPriceStrategy {
     Double calPrice(Double orgnicPrice);
 }

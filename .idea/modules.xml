@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndriodDesignPattern.iml" filepath="$PROJECT_DIR$/.idea/modules/AndriodDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndriodDesignPattern.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndriodDesignPattern.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/My_Worck_Space.AndriodDesignPattern.iml" filepath="$PROJECT_DIR$/.idea/modules/My_Worck_Space.AndriodDesignPattern.iml" />
     </modules>
   </component>
 </project>

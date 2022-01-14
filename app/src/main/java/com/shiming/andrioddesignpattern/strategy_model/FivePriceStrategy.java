@@ -7,6 +7,6 @@ package com.shiming.andrioddesignpattern.strategy_model;
 public class FivePriceStrategy implements PriceStrategy {
     @Override
     public int setPrice(int orgPrice) {
-        return (int) (orgPrice*0.5);
+        return (int) (orgPrice * 0.5);
     }
 }
